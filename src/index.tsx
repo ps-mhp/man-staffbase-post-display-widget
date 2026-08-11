@@ -21,19 +21,41 @@ import ReactDOM from "react-dom/client";
 
 import { BlockFactory, BlockDefinition, ExternalBlockDefinition, BaseBlock } from "widget-sdk";
 import { configurationSchema, uiSchema } from "./configuration-schema";
+import { readPostId } from "./post-content";
+import { PostView } from "./post-view";
 import icon from "../resources/post-display-widget.svg";
 import pkg from "../package.json";
 
+/**
+ * The one name the post id goes by.
+ *
+ * Three places have to agree on it: the key in the configuration schema,
+ * because the host saves a value under its schema key verbatim; the attribute
+ * declared to the host, because it drops an attribute it was never told about;
+ * and the name read back here. It is also the attribute registered for this
+ * widget in `widgets.json`.
+ */
+export const POST_ID_ATTRIBUTE = "post-id";
+
 /** Attributes handled by the widget; mirrored in the configuration schema. */
-const widgetAttributes: string[] = [];
+const widgetAttributes: string[] = [POST_ID_ATTRIBUTE];
 
 const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
   return class PostDisplayWidgetBlock extends BaseBlockClass implements BaseBlock {
     private _root: ReactDOM.Root | null = null;
 
     public renderBlock(container: HTMLElement): void {
+      const attrs = this.parseAttributes<Record<string, unknown>>();
+      const postId = readPostId(attrs[POST_ID_ATTRIBUTE]);
+
+      // The SDK is assumed to pass the same container for the life of the block.
       this._root ??= ReactDOM.createRoot(container);
-      this._root.render(<div />);
+      this._root.render(<PostView postId={postId} />);
+    }
+
+    public unmountBlock(_container: HTMLElement): void {
+      this._root?.unmount();
+      this._root = null;
     }
 
     public static get observedAttributes(): string[] {
@@ -53,7 +75,7 @@ const blockDefinition: BlockDefinition = {
   blockLevel: "block",
   configurationSchema: configurationSchema,
   uiSchema: uiSchema,
-  label: "PostDisplayWidget",
+  label: "PostDisplay",
   iconUrl: icon,
 };
 
@@ -63,4 +85,9 @@ const externalBlockDefinition: ExternalBlockDefinition = {
   version: pkg.version,
 };
 
-window.defineBlock(externalBlockDefinition);
+// The guard lets the module load in Jest/jsdom where defineBlock is absent,
+// while keeping the call unconditional in the real Staffbase host, where it is
+// always present — in the editor and on a published page alike.
+if (typeof window.defineBlock === "function") {
+  window.defineBlock(externalBlockDefinition);
+}

@@ -16,13 +16,30 @@ import { JSONSchema7 } from "json-schema";
 
 /**
  * Schema for the widget's configuration dialog.
+ *
+ * The key is byte-identical to `POST_ID_ATTRIBUTE` and to the attribute
+ * registered in `widgets.json`: the host saves a value under its schema key
+ * verbatim and reads it back off the element under the declared attribute
+ * name, and it drops an attribute it was never told about.
+ *
  * @see https://rjsf-team.github.io/react-jsonschema-form/docs/
  */
 export const configurationSchema: JSONSchema7 = {
-  properties: {},
+  properties: {
+    "post-id": {
+      type: "string",
+      title: "Beitrags-ID",
+    },
+  },
 };
 
 /**
  * @see https://rjsf-team.github.io/react-jsonschema-form/docs/api-reference/uiSchema
  */
-export const uiSchema: UiSchema = {};
+export const uiSchema: UiSchema = {
+  "post-id": {
+    "ui:help":
+      "ID des Beitrags aus Staffbase — die 24-stellige Zeichenfolge am Ende der Beitrags-URL. " +
+      "Die vollständige URL kann ebenfalls eingefügt werden.",
+  },
+};
