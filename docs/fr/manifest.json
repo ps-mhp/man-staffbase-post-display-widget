@@ -1,11 +1,16 @@
 {
   "title": "Affichage des contributions",
-  "summary": "Affiche un seul article Staffbase à l'endroit où le widget est placé.",
+  "summary": "Affiche un article Staffbase publié directement sur une autre page.",
   "pages": [
     {
       "id": "overview",
       "title": "Aperçu",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Étape par étape",
+      "file": "usage.md"
     },
     {
       "id": "settings",

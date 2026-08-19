@@ -2,9 +2,7 @@
 
 | Configuración | Descripción |
 | --- | --- |
-| ID de la publicación | El ID de la publicación que se va a mostrar: la cadena de 24 caracteres que aparece al final de la URL de la publicación. Campo obligatorio. |
+| ID de la entrada | La entrada que se va a mostrar. Campo obligatorio. Lo más sencillo es introducir la dirección completa de la entrada; como alternativa, se puede introducir la cadena de 24 caracteres que aparece al final de dicha dirección. |
 
-En lugar del ID puro, también se puede introducir la URL completa de la publicación;
-el widget extrae el ID por sí mismo de ella. Esta es la opción más cómoda:
-abrir la URL de la publicación deseada en Staffbase, copiarla de la
-barra de direcciones y pegarla en el campo.
+No hay nada más que configurar. La presentación, el orden de los elementos y
+el idioma se determinan automáticamente.

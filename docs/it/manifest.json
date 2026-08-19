@@ -1,11 +1,16 @@
 {
-  "title": "Annuncio relativo ai contributi",
-  "summary": "Visualizza un singolo post di Staffbase nel punto in cui viene posizionato il widget.",
+  "title": "Annuncio relativo al contributo",
+  "summary": "Visualizza un post pubblicato su Staffbase direttamente su un'altra pagina.",
   "pages": [
     {
       "id": "overview",
       "title": "Panoramica",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Passo dopo passo",
+      "file": "usage.md"
     },
     {
       "id": "settings",

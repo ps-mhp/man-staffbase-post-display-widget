@@ -2,9 +2,7 @@
 
 | Paramètre | Description |
 | --- | --- |
-| ID de l'article | L'ID de l'article à afficher — la chaîne de 24 caractères située à la fin de l'URL de l'article. Champ obligatoire. |
+| ID de l'article | L'article à afficher. Champ obligatoire. Le plus simple est d'insérer l'adresse complète de l'article ; vous pouvez également utiliser la chaîne de 24 caractères figurant à la fin de cette adresse. |
 
-Au lieu de l'identifiant seul, vous pouvez également insérer l'URL complète de l'article ;
-le widget en extraira lui-même l'identifiant. C'est la méthode la plus pratique :
-ouvrez l'URL de l'article souhaité dans Staffbase, copiez-la depuis la
-barre d'adresse et collez-la dans le champ.
+Il n'y a rien d'autre à configurer. L'affichage, l'ordre des éléments et
+la langue sont déterminés automatiquement.

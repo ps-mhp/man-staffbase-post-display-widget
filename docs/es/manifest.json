@@ -1,11 +1,16 @@
 {
-  "title": "Anuncio de la cuota",
-  "summary": "Muestra una única publicación de Staffbase en el lugar donde se coloque el widget.",
+  "title": "Anuncio de la publicación",
+  "summary": "Muestra una publicación de Staffbase directamente en otra página.",
   "pages": [
     {
       "id": "overview",
       "title": "Resumen",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Paso a paso",
+      "file": "usage.md"
     },
     {
       "id": "settings",

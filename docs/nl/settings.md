@@ -2,9 +2,7 @@
 
 | Instelling | Beschrijving |
 | --- | --- |
-| Bericht-ID | De ID van het weer te geven bericht — de 24-cijferige tekenreeks aan het einde van de bericht-URL. Verplicht veld. |
+| Bericht-ID | Het bericht dat moet worden weergegeven. Verplicht veld. Het is het eenvoudigst om het volledige adres van het bericht in te voeren; als alternatief kunt u de 24-cijferige tekenreeks aan het einde van dit adres invoeren. |
 
-In plaats van alleen de ID kun je ook de volledige bericht-URL invoeren;
-de widget haalt de ID daar zelf uit. Dat is de handigste
-manier: open de URL van het gewenste bericht in Staffbase, kopieer deze uit de
-adresbalk en plak deze in het veld.
+Meer hoeft u niet in te stellen. De weergave, de volgorde van de elementen en
+de taal worden automatisch bepaald.

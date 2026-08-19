@@ -2,9 +2,7 @@
 
 | Definição | Descrição |
 | --- | --- |
-| ID da publicação | O ID da publicação a apresentar — a sequência de 24 caracteres no final do URL da publicação. Campo obrigatório. |
+| ID da publicação | A publicação a apresentar. Campo obrigatório. A forma mais simples é inserir o endereço completo da publicação; em alternativa, a sequência de 24 caracteres no final desse endereço. |
 
-Em vez do ID puro, também é possível inserir o URL completo da publicação;
-o widget extrai ele próprio o ID a partir desse URL. Esta é a opção mais prática:
-abra o URL da publicação pretendida no Staffbase, copie-o da
-barra de endereços e cole-o no campo.
+Não há mais nada a configurar. A apresentação, a ordem dos elementos e
+o idioma são definidos automaticamente.

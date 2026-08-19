@@ -1,11 +1,16 @@
 {
   "title": "Advertentie",
-  "summary": "Geeft één Staffbase-bericht weer op de plek waar de widget wordt geplaatst.",
+  "summary": "Geeft een gepubliceerd Staffbase-bericht direct op een andere pagina weer.",
   "pages": [
     {
       "id": "overview",
       "title": "Overzicht",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Stap voor stap",
+      "file": "usage.md"
     },
     {
       "id": "settings",

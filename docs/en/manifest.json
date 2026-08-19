@@ -1,11 +1,16 @@
 {
   "title": "Advertisement",
-  "summary": "Displays a single Staffbase post where the widget is placed.",
+  "summary": "Displays a published Staffbase post directly on another page.",
   "pages": [
     {
       "id": "overview",
       "title": "Overview",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Step by step",
+      "file": "usage.md"
     },
     {
       "id": "settings",

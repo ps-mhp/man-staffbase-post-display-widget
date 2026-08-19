@@ -1,11 +1,16 @@
 {
   "title": "Beitrags-Anzeige",
-  "summary": "Zeigt einen einzelnen Staffbase-Beitrag an der Stelle an, an der das Widget platziert wird.",
+  "summary": "Zeigt einen veröffentlichten Staffbase-Beitrag direkt auf einer anderen Seite an.",
   "pages": [
     {
       "id": "overview",
       "title": "Übersicht",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Schritt für Schritt",
+      "file": "usage.md"
     },
     {
       "id": "settings",

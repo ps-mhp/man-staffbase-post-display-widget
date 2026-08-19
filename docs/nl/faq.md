@@ -1,22 +1,43 @@
 # Veelgestelde vragen
 
-**Vraag:** De widget geeft „Geen bericht-ID geconfigureerd“ weer — wat moet ik doen?
+**Vraag:** Er verschijnt de melding „Geen bericht-ID geconfigureerd. Voer de ID van het
+bericht in de widgetinstellingen in.“
 
-Antwoord: Voer de bericht-ID (of de volledige bericht-URL) in de
-widgetinstellingen in. Zonder ID weet de widget niet welk
-bericht moet worden weergegeven.
+Antwoord: Het veld **bericht-ID** is leeg. Kopieer het volledige adres van het
+bericht hierin en sla het op.
 
-**Vraag:** Waarom ziet een lezer een andere taalversie dan
-verwacht?
+**Vraag:** Er verschijnt „Bericht kon niet worden geladen“.
 
-Antwoord: De widget toont de taal die overeenkomt met de taalinstelling van de pagina
-of de browser van de lezer overeenkomt — niet per se de taal waarin
-het bericht oorspronkelijk is geschreven. Als het bericht alleen in een
-andere taal beschikbaar is, wordt deze weergegeven, zodat er nooit „niets“ verschijnt.
+Antwoord: De widget kan het bericht niet bereiken. Veelvoorkomende oorzaken: de ID
+klopt niet, het bericht is verwijderd of ingetrokken, of de lezer
+heeft geen toegang tot het bericht. Controleer dit door het volledige adres van het bericht
+opnieuw in te voeren en de pagina te openen als lid van de doelgroep.
 
-**Vraag:** Kan ik met deze widget ook berichten weergeven die de lezer
-eigenlijk niet zou mogen zien?
+**Vraag:** Er verschijnt „Het bericht bevat geen weer te geven inhoud.“
 
-Antwoord: Nee. Het bericht wordt opgevraagd via de sessie van de lezer
-— er gelden dus precies dezelfde normale leesrechten als bij de lezer zelf. Als de
-toestemming ontbreekt, blijft het bericht ook via deze widget onzichtbaar.
+Antwoord: Het bericht is gevonden, maar heeft in de weergegeven taal
+noch een titel, noch een teaser, noch tekst — meestal een leeg concept of een
+aangemaakte, maar niet ingevulde taalversie.
+
+**Vraag:** Waarom ontbreken reacties, likes, auteur en datum?
+
+Antwoord: De widget toont bewust alleen de titel, de teaser en de tekst. Voor de volledige
+weergave van het bericht kun je niet om het originele bericht heen — plaats daar daarom het beste
+een extra link naar.
+
+**Vraag:** Waarom ziet iemand een andere taalversie dan ik?
+
+Antwoord: Er wordt de taal weergegeven die past bij de pagina of de browser van de
+lezer, niet de oorspronkelijke taal van het bericht. Als de
+juiste versie niet bestaat, wordt een beschikbare versie getoond.
+
+**Vraag:** Kan ik hiermee een bericht weergeven dat iemand eigenlijk niet
+mag zien?
+
+Antwoord: Nee. Het bericht wordt geladen zodra de lezer zich aanmeldt;
+zonder toestemming blijft het onzichtbaar.
+
+**Vraag:** Kan ik meerdere berichten in één widget weergeven?
+
+Antwoord: Nee, een widget toont precies één bericht. Plaats voor meerdere berichten
+meerdere widgets.

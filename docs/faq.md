@@ -1,22 +1,43 @@
 # FAQ
 
-**Frage:** Das Widget zeigt „Keine Beitrags-ID konfiguriert“ — was tun?
+**Frage:** Es erscheint „Keine Beitrags-ID konfiguriert. Bitte die ID des
+Beitrags in den Widget-Einstellungen eintragen.“
 
-Antwort: Die Beitrags-ID (oder die vollständige Beitrags-URL) in den
-Widget-Einstellungen eintragen. Ohne ID weiß das Widget nicht, welcher
-Beitrag angezeigt werden soll.
+Antwort: Das Feld **Beitrags-ID** ist leer. Die vollständige Adresse des
+Beitrags hineinkopieren und speichern.
 
-**Frage:** Warum sieht eine lesende Person eine andere Sprachfassung als
-erwartet?
+**Frage:** Es erscheint „Beitrag konnte nicht geladen werden“.
 
-Antwort: Das Widget zeigt die Sprache, die zur Spracheinstellung der Seite
-bzw. des Browsers der lesenden Person passt — nicht zwingend die Sprache, in
-der der Beitrag ursprünglich verfasst wurde. Gibt es den Beitrag nur in einer
-anderen Sprache, wird diese angezeigt, damit nie „nichts“ erscheint.
+Antwort: Das Widget erreicht den Beitrag nicht. Übliche Ursachen: die ID
+stimmt nicht, der Beitrag wurde gelöscht oder zurückgezogen, oder die lesende
+Person darf ihn nicht sehen. Zur Kontrolle die vollständige Beitrags-Adresse
+erneut einfügen und die Seite als Mitglied der Zielgruppe aufrufen.
 
-**Frage:** Kann ich mit diesem Widget auch Beiträge zeigen, die die lesende
-Person eigentlich nicht sehen dürfte?
+**Frage:** Es erscheint „Der Beitrag enthält keine anzeigbaren Inhalte.“
 
-Antwort: Nein. Der Beitrag wird mit der Sitzung der lesenden Person
-abgerufen — es gelten also genau deren normale Leseberechtigungen. Fehlt die
-Berechtigung, bleibt der Beitrag auch über dieses Widget unsichtbar.
+Antwort: Der Beitrag wurde gefunden, hat in der angezeigten Sprache aber
+weder Titel noch Teaser noch Text — meist ein leerer Entwurf oder eine
+angelegte, aber nicht befüllte Sprachfassung.
+
+**Frage:** Warum fehlen Kommentare, Likes, Autor und Datum?
+
+Antwort: Das Widget zeigt bewusst nur Titel, Teaser und Text. Für die volle
+Beitragsansicht führt kein Weg am Originalbeitrag vorbei — dorthin am besten
+zusätzlich verlinken.
+
+**Frage:** Warum sieht jemand eine andere Sprachfassung als ich?
+
+Antwort: Angezeigt wird die Sprache, die zur Seite bzw. zum Browser der
+lesenden Person passt, nicht die Ursprungssprache des Beitrags. Existiert die
+passende Fassung nicht, wird eine vorhandene gezeigt.
+
+**Frage:** Kann ich damit einen Beitrag zeigen, den jemand eigentlich nicht
+sehen darf?
+
+Antwort: Nein. Der Beitrag wird mit der Anmeldung der lesenden Person geladen;
+ohne Berechtigung bleibt er unsichtbar.
+
+**Frage:** Kann ich mehrere Beiträge in einem Widget anzeigen?
+
+Antwort: Nein, ein Widget zeigt genau einen Beitrag. Für mehrere Beiträge
+mehrere Widgets platzieren.

@@ -1,11 +1,16 @@
 {
-  "title": "Ogłoszenie o wpłacie",
-  "summary": "Wyświetla pojedynczy wpis ze Staffbase w miejscu, w którym umieszczono widżet.",
+  "title": "Ogłoszenie o składce",
+  "summary": "Wyświetla opublikowany wpis w Staffbase bezpośrednio na innej stronie.",
   "pages": [
     {
       "id": "overview",
       "title": "Przegląd",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Krok po kroku",
+      "file": "usage.md"
     },
     {
       "id": "settings",

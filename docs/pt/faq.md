@@ -1,22 +1,43 @@
 # Perguntas Frequentes
 
-**Pergunta:** O widget mostra «Nenhum ID de publicação configurado» — o que fazer?
+**Pergunta:** Aparece a mensagem «Não há nenhum ID de publicação configurado. Introduza o ID da
+publicação nas definições do widget.»
 
-Resposta: Introduza o ID da publicação (ou o URL completo da publicação) nas
-configurações do widget. Sem o ID, o widget não sabe qual
-a publicação que deve ser apresentada.
+Resposta: O campo **ID da publicação** está vazio. Copie o endereço completo da
+publicação para esse campo e guarde.
 
-**Pergunta:** Por que razão um leitor vê uma versão em outro idioma diferente do
-esperado?
+**Pergunta:** Aparece a mensagem «Não foi possível carregar a publicação».
 
-Resposta: O widget apresenta o idioma que corresponde à configuração de idioma da página
-ou do navegador do leitor — não necessariamente o idioma em
-que a publicação foi originalmente redigida. Se a publicação existir apenas noutro
-idioma, este será apresentado, para que nunca apareça «nada».
+Resposta: O widget não consegue aceder à publicação. Causas habituais: o ID
+está incorreto, a publicação foi eliminada ou retirada, ou a pessoa que está a ler
+não tem permissão para a ver. Para verificar, insira novamente o endereço completo da publicação
+e aceda à página como membro do público-alvo.
 
-**Pergunta:** Posso usar este widget para mostrar publicações que a pessoa que está a ler
-na verdade não deveria ver?
+**Pergunta:** Aparece a mensagem «A publicação não contém conteúdos exibíveis.»
 
-Resposta: Não. A publicação é carregada com base na sessão da pessoa que está a ler
-— pelo que se aplicam exatamente as suas autorizações normais de leitura. Se faltar a
-autorização, a publicação permanece invisível, mesmo através deste widget.
+Resposta: A publicação foi encontrada, mas, no idioma exibido, não tem
+nem título, nem teaser, nem texto — na maioria das vezes, trata-se de um rascunho vazio ou de uma
+versão linguística criada, mas não preenchida.
+
+**Pergunta:** Por que é que faltam comentários, «gostos», autor e data?
+
+Resposta: O widget mostra deliberadamente apenas o título, o teaser e o texto. Para ver a
+publicação na íntegra, não há como contornar a publicação original — o melhor é
+incluir também um link para lá.
+
+**Pergunta:** Por que razão alguém vê uma versão linguística diferente da minha?
+
+Resposta: É apresentado o idioma que corresponde à página ou ao navegador da
+pessoa que está a ler, e não o idioma original da publicação. Se a
+versão correspondente não existir, é apresentada uma versão disponível.
+
+**Pergunta:** Posso usar isto para mostrar uma publicação que, na verdade, alguém não
+deveria ver?
+
+Resposta: Não. A publicação é carregada quando a pessoa que está a ler inicia sessão;
+sem autorização, permanece invisível.
+
+**Pergunta:** Posso apresentar várias publicações num único widget?
+
+Resposta: Não, um widget apresenta exatamente uma publicação. Para várias publicações,
+coloque vários widgets.

@@ -1,11 +1,16 @@
 {
   "title": "Anúncio de contribuição",
-  "summary": "Exibe uma única publicação do Staffbase no local onde o widget for colocado.",
+  "summary": "Exibe uma publicação do Staffbase diretamente noutra página.",
   "pages": [
     {
       "id": "overview",
       "title": "Visão geral",
       "file": "overview.md"
+    },
+    {
+      "id": "usage",
+      "title": "Passo a passo",
+      "file": "usage.md"
     },
     {
       "id": "settings",

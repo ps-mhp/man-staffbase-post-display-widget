@@ -1,22 +1,43 @@
 # Domande frequenti
 
-**Domanda:** Il widget mostra il messaggio “Nessun ID post configurato” — cosa fare?
+**Domanda:** Viene visualizzato il messaggio “Nessun ID post configurato. Inserire l’ID del
+post nelle impostazioni del widget.”
 
-Risposta: Inserire l’ID del post (o l’URL completo del post) nelle
-impostazioni del widget. Senza l’ID, il widget non sa quale
-post visualizzare.
+Risposta: Il campo **ID post** è vuoto. Copiare l’indirizzo completo del
+post e salvare.
 
-**Domanda:** Perché un lettore vede una versione linguistica diversa da quella
-prevista?
+**Domanda:** Viene visualizzato il messaggio «Impossibile caricare il post».
 
-Risposta: Il widget mostra la lingua che corrisponde alle impostazioni linguistiche della pagina
-o del browser del lettore — non necessariamente la lingua in
-cui il post è stato originariamente scritto. Se il post è disponibile solo in un’
-altra lingua, verrà visualizzata quella, in modo che non appaia mai “nulla”.
+Risposta: Il widget non riesce a raggiungere il post. Cause più comuni: l’ID
+non è corretto, il post è stato cancellato o ritirato, oppure l’utente
+non è autorizzato a visualizzarlo. Per verificare, inserisci nuovamente l’indirizzo completo del post
+e accedi alla pagina come membro del gruppo target.
 
-**Domanda:** Con questo widget posso mostrare anche post che la persona che sta leggendo
-in realtà non dovrebbe vedere?
+**Domanda:** Viene visualizzato il messaggio «Il post non contiene contenuti visualizzabili».
 
-Risposta: No. Il post viene recuperato in base alla sessione della persona che sta leggendo
-— valgono quindi esattamente i suoi normali permessi di lettura. Se manca l’
-autorizzazione, il post rimane invisibile anche tramite questo widget.
+Risposta: Il post è stato trovato, ma nella lingua visualizzata non presenta
+né titolo, né anteprima, né testo — solitamente si tratta di una bozza vuota o di una
+versione linguistica creata ma non compilata.
+
+**Domanda:** Perché mancano commenti, “Mi piace”, autore e data?
+
+Risposta: Il widget mostra volutamente solo titolo, anteprima e testo. Per la visualizzazione completa
+del post non c’è alternativa al post originale — è consigliabile
+aggiungere un link aggiuntivo che rimandi ad esso.
+
+**Domanda:** Perché qualcuno vede una versione linguistica diversa dalla mia?
+
+Risposta: Viene visualizzata la lingua corrispondente alla pagina o al browser della
+persona che sta leggendo, non la lingua originale del post. Se la
+versione corrispondente non esiste, viene mostrata una versione disponibile.
+
+**Domanda:** Posso utilizzare questa funzione per mostrare un post che in realtà qualcuno non
+dovrebbe vedere?
+
+Risposta: No. Il post viene caricato al momento dell’accesso della persona che lo sta leggendo;
+senza autorizzazione rimane invisibile.
+
+**Domanda:** Posso visualizzare più contributi in un unico widget?
+
+Risposta: No, un widget mostra esattamente un solo contributo. Per più contributi,
+inserire più widget.
