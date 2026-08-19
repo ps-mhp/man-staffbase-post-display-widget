@@ -1,0 +1,31 @@
+{
+  "title": "Advertentie",
+  "summary": "Geeft één Staffbase-bericht weer op de plek waar de widget wordt geplaatst.",
+  "icon": "📰",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Overzicht",
+      "file": "overview.md"
+    },
+    {
+      "id": "settings",
+      "title": "Instellingen",
+      "file": "settings.md"
+    },
+    {
+      "id": "faq",
+      "title": "Veelgestelde vragen",
+      "file": "faq.md"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Bijdrage",
+      "attributes": {},
+      "resolve": [
+        "post-id"
+      ]
+    }
+  ]
+}

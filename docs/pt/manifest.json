@@ -1,0 +1,31 @@
+{
+  "title": "Anúncio de contribuição",
+  "summary": "Exibe uma única publicação do Staffbase no local onde o widget for colocado.",
+  "icon": "📰",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Visão geral",
+      "file": "overview.md"
+    },
+    {
+      "id": "settings",
+      "title": "Definições",
+      "file": "settings.md"
+    },
+    {
+      "id": "faq",
+      "title": "Perguntas Frequentes",
+      "file": "faq.md"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Artigo",
+      "attributes": {},
+      "resolve": [
+        "post-id"
+      ]
+    }
+  ]
+}

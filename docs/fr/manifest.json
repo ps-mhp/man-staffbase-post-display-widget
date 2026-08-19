@@ -1,0 +1,31 @@
+{
+  "title": "Affichage des contributions",
+  "summary": "Affiche un seul article Staffbase à l'endroit où le widget est placé.",
+  "icon": "📰",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Aperçu",
+      "file": "overview.md"
+    },
+    {
+      "id": "settings",
+      "title": "Paramètres",
+      "file": "settings.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Article",
+      "attributes": {},
+      "resolve": [
+        "post-id"
+      ]
+    }
+  ]
+}

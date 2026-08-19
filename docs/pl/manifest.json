@@ -1,0 +1,31 @@
+{
+  "title": "Ogłoszenie o wpłacie",
+  "summary": "Wyświetla pojedynczy wpis ze Staffbase w miejscu, w którym umieszczono widżet.",
+  "icon": "📰",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Przegląd",
+      "file": "overview.md"
+    },
+    {
+      "id": "settings",
+      "title": "Ustawienia",
+      "file": "settings.md"
+    },
+    {
+      "id": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "file": "faq.md"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Artykuł",
+      "attributes": {},
+      "resolve": [
+        "post-id"
+      ]
+    }
+  ]
+}

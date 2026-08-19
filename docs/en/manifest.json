@@ -1,0 +1,31 @@
+{
+  "title": "Advertisement",
+  "summary": "Displays a single Staffbase post where the widget is placed.",
+  "icon": "📰",
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "file": "overview.md"
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "file": "settings.md"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "file": "faq.md"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Post",
+      "attributes": {},
+      "resolve": [
+        "post-id"
+      ]
+    }
+  ]
+}
