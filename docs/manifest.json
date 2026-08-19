@@ -1,0 +1,17 @@
+{
+  "title": "Beitrags-Anzeige",
+  "summary": "Zeigt einen einzelnen Staffbase-Beitrag an der Stelle an, an der das Widget platziert wird.",
+  "icon": "📰",
+  "pages": [
+    { "id": "overview", "title": "Übersicht", "file": "overview.md" },
+    { "id": "settings", "title": "Einstellungen", "file": "settings.md" },
+    { "id": "faq", "title": "FAQ", "file": "faq.md" }
+  ],
+  "examples": [
+    {
+      "title": "Beitrag",
+      "attributes": {},
+      "resolve": ["post-id"]
+    }
+  ]
+}
