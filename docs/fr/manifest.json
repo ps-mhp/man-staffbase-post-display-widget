@@ -1,7 +1,6 @@
 {
   "title": "Affichage des contributions",
   "summary": "Affiche un seul article Staffbase à l'endroit où le widget est placé.",
-  "icon": "📰",
   "pages": [
     {
       "id": "overview",

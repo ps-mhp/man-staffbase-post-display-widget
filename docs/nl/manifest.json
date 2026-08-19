@@ -1,7 +1,6 @@
 {
   "title": "Advertentie",
   "summary": "Geeft één Staffbase-bericht weer op de plek waar de widget wordt geplaatst.",
-  "icon": "📰",
   "pages": [
     {
       "id": "overview",

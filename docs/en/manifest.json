@@ -1,7 +1,6 @@
 {
   "title": "Advertisement",
   "summary": "Displays a single Staffbase post where the widget is placed.",
-  "icon": "📰",
   "pages": [
     {
       "id": "overview",

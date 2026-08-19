@@ -1,7 +1,6 @@
 {
   "title": "Ogłoszenie o wpłacie",
   "summary": "Wyświetla pojedynczy wpis ze Staffbase w miejscu, w którym umieszczono widżet.",
-  "icon": "📰",
   "pages": [
     {
       "id": "overview",

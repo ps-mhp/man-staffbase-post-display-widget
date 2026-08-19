@@ -1,7 +1,6 @@
 {
   "title": "Annuncio relativo ai contributi",
   "summary": "Visualizza un singolo post di Staffbase nel punto in cui viene posizionato il widget.",
-  "icon": "📰",
   "pages": [
     {
       "id": "overview",
