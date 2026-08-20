@@ -91,3 +91,32 @@ export function pickLocalizedContent(
 
   return contents[keys[0]];
 }
+
+/**
+ * The user's languages, the app's own setting first.
+ *
+ * `SBUserProfile` from the widget SDK carries no language, `/api/users/me`
+ * does (`config.locale`). That value is the language the user picked inside
+ * the app, which is what a post should be shown in; the document only says
+ * which language the page was rendered in, and on an English shell that is
+ * `en` even for a Spanish reader.
+ *
+ * A failed request is not an error here — the document locales still answer
+ * the question, just less well.
+ */
+export async function userLocales(): Promise<string[]> {
+  const fallback = documentLocales();
+  try {
+    const response = await fetch("/api/users/me", {
+      credentials: "same-origin",
+      headers: { Accept: "application/json" },
+    });
+    if (!response.ok) return fallback;
+
+    const user = (await response.json()) as { config?: { locale?: string } };
+    const locale = user.config?.locale?.trim().replace("-", "_");
+    return locale ? [locale, ...fallback.filter((other) => other !== locale)] : fallback;
+  } catch {
+    return fallback;
+  }
+}

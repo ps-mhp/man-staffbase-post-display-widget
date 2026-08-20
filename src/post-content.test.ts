@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-import { readPostId, documentLocales, pickLocalizedContent } from "./post-content";
+import { readPostId, documentLocales, pickLocalizedContent, userLocales } from "./post-content";
 
 describe("readPostId", () => {
   it("accepts a 24-digit hex id and trims it", () => {
@@ -77,5 +77,30 @@ describe("pickLocalizedContent", () => {
   it("returns null when there is nothing to show", () => {
     expect(pickLocalizedContent({}, ["de_DE"])).toBeNull();
     expect(pickLocalizedContent(undefined, ["de_DE"])).toBeNull();
+  });
+});
+
+describe("userLocales", () => {
+  afterEach(() => {
+    jest.restoreAllMocks();
+    document.documentElement.removeAttribute("lang");
+  });
+
+  it("puts the locale the app has on file for the user first", async () => {
+    document.documentElement.setAttribute("lang", "en");
+    jest
+      .spyOn(globalThis, "fetch")
+      .mockImplementation(async () =>
+        new Response(JSON.stringify({ config: { locale: "es_ES" } }), { status: 200 }),
+      );
+
+    await expect(userLocales()).resolves.toEqual(["es_ES", "en", "en-US".replace("-", "_")]);
+  });
+
+  it("falls back to the document when the call fails", async () => {
+    document.documentElement.setAttribute("lang", "de-DE");
+    jest.spyOn(globalThis, "fetch").mockRejectedValue(new Error("offline"));
+
+    await expect(userLocales()).resolves.toEqual(documentLocales());
   });
 });

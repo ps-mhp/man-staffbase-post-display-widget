@@ -14,7 +14,7 @@
 import React from "react";
 
 import { fetchPost } from "./post-client";
-import { PostContent, documentLocales, pickLocalizedContent } from "./post-content";
+import { PostContent, pickLocalizedContent, userLocales } from "./post-content";
 import { ensureStyles } from "./styles";
 
 const MISSING_ID = "Keine Beitrags-ID konfiguriert. Bitte die ID des Beitrags in den Widget-Einstellungen eintragen.";
@@ -63,10 +63,10 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
     let current = true;
     setState({ status: "loading" });
 
-    fetchPost(postId)
-      .then((post) => {
+    Promise.all([fetchPost(postId), userLocales()])
+      .then(([post, locales]) => {
         if (!current) return;
-        const content = pickLocalizedContent(post.contents, documentLocales());
+        const content = pickLocalizedContent(post.contents, locales);
         setState(
           content === null
             ? { status: "error", message: NO_CONTENT }
