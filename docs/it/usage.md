@@ -1,33 +1,39 @@
 # Passo dopo passo
 
-## Incorporare un post
+## Inserisci il post
 
-1. Aprire il post desiderato su Staffbase — il post definitivo,
-   già pubblicato, non la bozza.
-2. Copiare l’**indirizzo completo** dalla barra degli indirizzi del browser.
-3. Aprire la pagina di destinazione per modificarla e trascinare il widget **Visualizzazione post** nella
-   posizione desiderata.
-4. Incollare l’indirizzo copiato nel campo **ID post**. Il widget rileva
-   automaticamente l’ID: non è necessario individuare manualmente la
-   stringa di 24 caratteri alla fine dell’indirizzo.
-5. Salvare e verificare nell’anteprima.
+1. Apri la landing page per la modifica e seleziona il widget **Visualizza post****
+   Trascina il punto desiderato. 
+2. Nelle impostazioni sotto **Post** seleziona la lista **Post ...** 
+   e seleziona il post. Ogni voce menziona il titolo, il canale e la data; 
+   Gli ultimi post sono in cima. 
+3. Salva e anteprima. 
 
-Finché non viene inserito nulla, in quella posizione compare la nota «Nessun
-ID post configurato». Questa nota appare anche sulla
-pagina pubblicata — quindi non pubblicare mai con il campo vuoto.
+Se il post non è nella lista (la lista mostra le ultime 100): 
 
-## Sostituire un post
+1. Apri il post in Staffbase e ottieni l'**indirizzo completo** dal
+   Copia la barra degli indirizzi del browser. 
+2. Nella lista seleziona **Inserisci l'altro ID del post ...**. 
+3. Incolla l'indirizzo copiato nel campo. L'ID legge il widget
+   — la stringa di 24 cifre alla fine dell'indirizzo non deve necessariamente essere
+   può essere selezionato a mano. 
 
-1. Copiare l’indirizzo del nuovo post.
-2. Incollarlo nello stesso campo **ID post**; il valore precedente verrà così
-   sovrascritto.
-3. Salvare. Non è necessario un secondo widget.
+Finché non viene inserito nulla, la nota "Nessuno
+post ID". Questo avviso appare anche sul
+pagina pubblicata — cioè non pubblicare mai con un campo vuoto. 
 
-## Verificare cosa vedono gli altri
+## Condividi il post
 
-1. Verificare quale gruppo target visualizza la pagina.
-2. Verificare se a questo gruppo target sia consentito visualizzare anche il post incorporato.
-3. In caso di dubbio, accedere alla pagina con un account di prova appartenente a quel gruppo target.
+1. Apri le impostazioni e apri un altro post sotto **Post**
+   (o inserire un indirizzo diverso); il valore vecchio è
+   . 
+2. Salva. Un secondo widget non è necessario. 
 
-Il post viene caricato in base ai diritti dell’utente che lo legge: in qualità di redattore/redattrice,
-potrebbe vedere più contenuti rispetto ai propri lettori.
+## Controlla cosa vedono gli altri
+
+1. Controlla quale pubblico sta vedendo la pagina. 
+2. Controlla se anche questo gruppo target può vedere il post incorporato. 
+3. In caso di dubbio, apri la pagina con un account di test di questo gruppo target. 
+
+L'articolo è caricato con i diritti della persona che legge: Vedi come editor
+Potresti volere più dei tuoi lettori.

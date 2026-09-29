@@ -1,5 +1,5 @@
 {
-  "title": "Advertisement",
+  "title": "Post Display",
   "summary": "Displays a published Staffbase post directly on another page.",
   "pages": [
     {
@@ -25,7 +25,7 @@
   ],
   "examples": [
     {
-      "title": "Post",
+      "title": "Contribution",
       "attributes": {},
       "resolve": [
         "post-id"

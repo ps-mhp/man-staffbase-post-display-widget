@@ -50,9 +50,14 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
     postId === null ? { status: "error", message: MISSING_ID } : { status: "loading" },
   );
 
-  React.useEffect(() => {
-    ensureStyles();
+  // A ref, not an effect on the document: the stylesheet has to land in the
+  // root this element was rendered into, which is a shadow root in the
+  // Content Designer (see `@shared/style-root`).
+  const anchorStyles = React.useCallback((element: HTMLElement | null) => {
+    if (element !== null) ensureStyles(element);
+  }, []);
 
+  React.useEffect(() => {
     if (postId === null) {
       setState({ status: "error", message: MISSING_ID });
       return;
@@ -86,7 +91,7 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
 
   if (state.status === "loading") {
     return (
-      <div className="post-display" data-testid="post-display">
+      <div ref={anchorStyles} className="post-display" data-testid="post-display">
         <p className="post-display__status">Beitrag wird geladen …</p>
       </div>
     );
@@ -94,7 +99,7 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
 
   if (state.status === "error") {
     return (
-      <div className="post-display" data-testid="post-display">
+      <div ref={anchorStyles} className="post-display" data-testid="post-display">
         <p className="post-display__error" role="alert">
           {state.message}
         </p>
@@ -104,7 +109,7 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
 
   const { title, teaser, content } = state.content;
   return (
-    <article className="post-display" data-testid="post-display">
+    <article ref={anchorStyles} className="post-display" data-testid="post-display">
       <Html html={title ?? ""} className="post-display__title" />
       <Html html={teaser ?? ""} className="post-display__teaser" />
       <Html html={content ?? ""} className="post-display__body" />

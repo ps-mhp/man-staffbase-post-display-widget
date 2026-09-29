@@ -1,8 +1,8 @@
 # Instellingen
 
-| Instelling | Beschrijving |
+| Setting | Beschrijving |
 | --- | --- |
-| Bericht-ID | Het bericht dat moet worden weergegeven. Verplicht veld. Het is het eenvoudigst om het volledige adres van het bericht in te voeren; als alternatief kunt u de 24-cijferige tekenreeks aan het einde van dit adres invoeren. |
+| Bericht | Het bericht dat getoond moet worden. Verplicht veld. Selecteer **Selecteer bericht ...** uit de lijst (de meest recente 100 berichten, met kanaal en datum). Als het ontbreekt, selecteer **Voer andere bericht ID in ...** en voeg het volledige postadres of de 24-cijferige string aan het einde van dit adres in. |
 
-Meer hoeft u niet in te stellen. De weergave, de volgorde van de elementen en
-de taal worden automatisch bepaald.
+Er is niets meer op te stellen. Weergave, volgorde van de elementen en
+Taal ontstaat automatisch.

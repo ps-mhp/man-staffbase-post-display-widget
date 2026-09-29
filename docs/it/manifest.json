@@ -1,6 +1,6 @@
 {
-  "title": "Annuncio relativo al contributo",
-  "summary": "Visualizza un post pubblicato su Staffbase direttamente su un'altra pagina.",
+  "title": "Esposizione dopo la Pubblicazione",
+  "summary": "Mostra un post pubblicato di Staffbase direttamente su un'altra pagina.",
   "pages": [
     {
       "id": "overview",
@@ -25,7 +25,7 @@
   ],
   "examples": [
     {
-      "title": "Articolo",
+      "title": "Contributo",
       "attributes": {},
       "resolve": [
         "post-id"

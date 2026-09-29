@@ -1,6 +1,6 @@
 {
-  "title": "Affichage des contributions",
-  "summary": "Affiche un article Staffbase publié directement sur une autre page.",
+  "title": "Affichage après la publication",
+  "summary": "Affiche un post publié sur la Staffbase directement sur une autre page.",
   "pages": [
     {
       "id": "overview",
@@ -14,7 +14,7 @@
     },
     {
       "id": "settings",
-      "title": "Paramètres",
+      "title": "Décors",
       "file": "settings.md"
     },
     {
@@ -25,7 +25,7 @@
   ],
   "examples": [
     {
-      "title": "Article",
+      "title": "Contribution",
       "attributes": {},
       "resolve": [
         "post-id"

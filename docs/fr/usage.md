@@ -1,33 +1,39 @@
-# Étape par étape
+# Pas à pas
 
-## Intégrer un article
+## Encastrer le post
 
-1. Ouvrez l'article souhaité dans Staffbase — l'article final,
-   déjà publié, et non le brouillon.
-2. Copiez l'**adresse complète** depuis la barre d'adresse du navigateur.
-3. Ouvrez la page de destination pour la modifier et faites glisser le widget **Affichage de l'article** à
-   l'emplacement souhaité.
-4. Collez l’adresse copiée dans le champ **ID de l’article**. Le widget récupère
-   lui-même l’ID — il n’est pas nécessaire de rechercher manuellement la chaîne de
-   24 caractères située à la fin de l’adresse.
-5. Enregistrez et vérifiez dans l’aperçu.
+1. Ouvrir la page d’accueil pour la modification et sélectionner le widget **Afficher les publications**
+   Faites glisser à l’endroit désiré. 
+2. Dans les paramètres sous **Post**, sélectionnez la liste **Post ...** 
+   et sélectionner la publication. Chaque entrée mentionne le titre, le canal et la date ; 
+   Les derniers articles sont en haut. 
+3. Sauvegarder et prévisualiser. 
 
-Tant que rien n’est saisi, la mention « Aucun
-ID d’article configuré » s’affiche à cet endroit. Cette mention apparaît également sur la
-page publiée — ne publiez donc jamais avec un champ vide.
+Si le post n’est pas dans la liste (la liste montre les 100 plus récents) : 
 
-## Remplacer un article
+1. Ouvrez le post dans Staffbase et obtenez l'**adresse complète** auprès de la
+   Copiez la barre d’adresses du navigateur. 
+2. Dans la liste, sélectionnez **Entrer l’autre identifiant de poste...**. 
+3. Collez l’adresse copiée dans le champ. L’ID lit le widget
+   — la chaîne de 24 chiffres à la fin de l’adresse n’a pas besoin d’être
+   On peut le choisir à la main. 
 
-1. Copiez l’adresse du nouvel article.
-2. Collez-la dans le même champ **ID de l’article** ; l’ancienne valeur sera alors
-   écrasée.
-3. Enregistrez. Un deuxième widget n’est pas nécessaire.
+Tant que rien n’est inscrit, la note « Aucun
+poste. » Cet avis apparaît également sur le
+page publiée — c’est-à-dire ne jamais publier avec un champ vide. 
 
-## Vérifier ce que les autres voient
+## Partager le post
 
-1. Vérifiez quel groupe cible voit la page.
-2. Vérifiez si ce groupe cible est également autorisé à voir l’article intégré.
-3. En cas de doute, consultez la page avec un compte test appartenant à ce groupe cible.
+1. Ouvrez les paramètres et ouvrez un autre post sous **Post**
+   (ou entrer une adresse différente) ; l’ancienne valeur est
+   . 
+2. Sauvegarder. Un second widget n’est pas nécessaire. 
 
-L’article s’affiche en fonction des droits de la personne qui le consulte : en tant que rédacteur·trice,
-vous pouvez voir davantage d’informations que vos lectrices et lecteurs.
+## Vérifie ce que les autres voient
+
+1. Vérifiez quel public voit la page. 
+2. Vérifiez si ce groupe cible est également autorisé à voir la publication intégrée. 
+3. En cas de doute, ouvrez la page avec un compte test de ce groupe cible. 
+
+L’article se charge avec les droits de la personne qui lit : Voir en tant qu’éditeur
+Vous pourriez en vouloir plus que vos lecteurs.

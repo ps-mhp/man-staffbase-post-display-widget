@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-import { POST_ID_ATTRIBUTE } from "./index";
+import { POST_ID_ATTRIBUTE, stopPostPickerInjector } from "./index";
 import { configurationSchema, uiSchema } from "./configuration-schema";
 
 describe("POST_ID_ATTRIBUTE", () => {
@@ -25,5 +25,14 @@ describe("POST_ID_ATTRIBUTE", () => {
 
   it("is the key the dialog's ui hints are filed under", () => {
     expect(Object.keys(uiSchema)).toEqual([POST_ID_ATTRIBUTE]);
+  });
+});
+
+describe("stopPostPickerInjector", () => {
+  it("is exported so tests can dispose of the post picker observer", () => {
+    // The picker runs at module scope; without a way to stop it, its
+    // MutationObserver would outlive jsdom's teardown of this file.
+    expect(typeof stopPostPickerInjector).toBe("function");
+    stopPostPickerInjector();
   });
 });

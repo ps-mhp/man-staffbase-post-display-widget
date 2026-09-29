@@ -28,7 +28,7 @@ export const configurationSchema: JSONSchema7 = {
   properties: {
     "post-id": {
       type: "string",
-      title: "Beitrags-ID",
+      title: "Beitrag",
     },
   },
 };
@@ -39,7 +39,7 @@ export const configurationSchema: JSONSchema7 = {
 export const uiSchema: UiSchema = {
   "post-id": {
     "ui:help":
-      "ID des Beitrags aus Staffbase — die 24-stellige Zeichenfolge am Ende der Beitrags-URL. " +
-      "Die vollständige URL kann ebenfalls eingefügt werden.",
+      "Den Beitrag aus der Liste wählen. Fehlt er dort, „Andere Beitrags-ID eingeben …“ wählen: " +
+      "die 24-stellige Zeichenfolge am Ende der Beitrags-URL oder die vollständige URL.",
   },
 };

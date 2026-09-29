@@ -1,33 +1,39 @@
-# Step by Step
+# Step by step
 
-## Embed a Post
+## Embed post
 
-1. Open the desired post in Staffbase—the finished,
-   published post, not the draft.
-2. Copy the **full URL** from the browser's address bar.
-3. Open the target page for editing and drag the **Post Display** widget to
-   the desired location.
-4. Paste the copied address into the **Post ID** field. The widget automatically
-   retrieves the ID itself — you don’t need to manually copy the 24-character string
-   at the end of the address.
-5. Save and check the preview.
+1. Open the landing page for editing and select the **Post View** widget
+   drag the desired spot. 
+2. In the settings under **Post** select the list **Post ...** 
+   and select the post. Each entry mentions the title, channel and date; 
+   the latest posts are at the top. 
+3. Save and preview. 
 
-As long as nothing is entered, the message “No
-post ID configured” will appear in that spot. This message also appears on the
-published page—so never publish with an empty field.
+If the post is not in the list (the list shows the most recent 100): 
 
-## Replace a Post
+1. Open the post in Staffbase and get the **complete address** from the
+   Copy the address bar of the browser. 
+2. In the list select **Enter other post ID ...**. 
+3. Paste the copied address into the field. The ID reads the widget
+   — the 24-digit string at the end of the address doesn't have to be
+   can be picked out by hand. 
 
-1. Copy the URL of the new post.
-2. Paste it into the same **Post ID** field; this will
-   overwrite the old value.
-3. Save. A second widget is not necessary.
+As long as nothing is entered, the note "None
+post ID". This notice also appears on the
+published page — i.e. never publish with an empty field. 
 
-## Check What Others See
+## Share post
 
-1. Check which audience can view the page.
-2. Check whether this audience is also allowed to view the embedded post.
-3. If in doubt, view the page using a test account for this audience.
+1. Open the settings and open another post under **Post**
+   (or enter a different address); the old value is
+   . 
+2. Save. A second widget is not necessary. 
 
-The post loads with the permissions of the person viewing it: As an editor,
-you may see more than your readers do.
+## Check what others see
+
+1. Check which audience is seeing the page. 
+2. Check whether this target group is also allowed to see the embedded post. 
+3. If in doubt, open the page with a test account of this target group. 
+
+The article loads with the rights of the person reading: See as editor
+You may want more than your readers.

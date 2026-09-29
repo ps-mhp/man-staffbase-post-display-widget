@@ -1,33 +1,39 @@
 # Passo a passo
 
-## Incorporar uma publicação
+## Embeded post
 
-1. Abra a publicação pretendida no Staffbase — a publicação final,
-   já publicada, e não o rascunho.
-2. Copie o **endereço completo** da barra de endereços do navegador.
-3. Abra a página de destino para edição e arraste o widget **Visualização da publicação** para
-   o local pretendido.
-4. Cole o endereço copiado no campo **ID da publicação**. O widget
-   extrai automaticamente o ID — a sequência de 24 caracteres no final do endereço
-   não precisa de ser identificada manualmente.
-5. Guarde e verifique na pré-visualização.
+1. Abra a página inicial para edição e selecione o widget **Visualizar Postes**
+   Arraste o local desejado. 
+2. Nas configurações em **Post**, selecione a lista **Post ...** 
+   e selecione a postagem. Cada entrada menciona o título, canal e data; 
+   As postagens mais recentes estão no topo. 
+3. Salvar e pré-visualizar. 
 
-Enquanto nada estiver inserido, aparecerá na posição a mensagem «Nenhum
-ID da publicação configurado». Esta mensagem também aparece na
-página publicada — por isso, nunca publique com o campo vazio.
+Se a postagem não estiver na lista (a lista mostra as 100 mais recentes): 
 
-## Substituir uma publicação
+1. Abra a postagem na Base de Funcionários e obtenha o **endereço completo** do
+   Copie a barra de endereços do navegador. 
+2. Na lista, selecione **Digitar outro ID de postagem ...**. 
+3. Cole o endereço copiado no campo. O ID lê o widget
+   — a cadeia de 24 dígitos no final do endereço não precisa ser
+   pode ser escolhido manualmente. 
 
-1. Copie o endereço da nova publicação.
-2. Cole-a no mesmo campo **ID da publicação**; o valor antigo será
-   substituído.
-3. Guarde. Não é necessário um segundo widget.
+Desde que nada seja inserido, a nota "Nenhum
+post ID". Este aviso também aparece no
+Página publicada — ou seja, nunca publique com um campo vazio. 
 
-## Verificar o que os outros vêem
+## Compartilhar postagem
 
-1. Verifique qual o público-alvo que vê a página.
-2. Verifique se esse público-alvo também tem permissão para ver a publicação incorporada.
-3. Em caso de dúvida, aceda à página com uma conta de teste desse público-alvo.
+1. Abra as configurações e abra outro post em **Post**
+   (ou insira um endereço diferente); o valor antigo é
+   . 
+2. Salve. Um segundo widget não é necessário. 
 
-A publicação carrega com os direitos da pessoa que a está a ler: como editor(a), poderá
-ver mais do que os seus leitores.
+## Veja o que os outros veem
+
+1. Verifique qual público está vendo a página. 
+2. Verifique se esse grupo-alvo também pode ver a postagem incorporada. 
+3. Em caso de dúvida, abra a página com uma conta de teste desse grupo-alvo. 
+
+O artigo carrega com os direitos da pessoa que lê: Veja como editor
+Você pode querer mais do que seus leitores.

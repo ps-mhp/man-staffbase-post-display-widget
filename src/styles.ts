@@ -11,6 +11,8 @@
  * limitations under the License.
  */
 
+import { ensureStyleElement } from "@shared/style-root";
+
 /** Id of the single style element, which is also how it is recognised again. */
 export const STYLE_ELEMENT_ID = "post-display-widget-styles";
 
@@ -19,7 +21,8 @@ export const STYLE_ELEMENT_ID = "post-display-widget-styles";
  *
  * Colours and fonts are inherited on purpose: the post is embedded in a page
  * that already has a design, and a block bringing its own palette would look
- * bolted on. Only spacing, the relative sizes of title and teaser, and the
+ * bolted on. The exception is the headline, which follows the MAN CI for a
+ * post headline. Otherwise only spacing, the teaser's relative size and the
  * containment of images are stated here.
  */
 export const POST_DISPLAY_CSS = `
@@ -30,10 +33,20 @@ export const POST_DISPLAY_CSS = `
   min-width: 0;
 }
 
-.post-display__title {
-  font-size: 1.75em;
-  font-weight: 700;
-  line-height: 1.2;
+/*
+ * The headline reads like the post's own headline in the news view:
+ * MANEurope Condensed Bold, 600, 28/34px, capitals, slightly tightened
+ * (measured on onetruck on 29.09.2026). Two classes, so the Content
+ * Designer's \`[data-c13y-region="root"] *\` reset does not win by order.
+ */
+.post-display .post-display__title {
+  font-family: var(--man-font-head, "MANEurope Condensed Bold", "MAN Europe", Arial, sans-serif);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: var(--man-slate, #303c49);
   margin: 0 0 0.5em;
 }
 
@@ -75,15 +88,14 @@ export const POST_DISPLAY_CSS = `
 `;
 
 /**
- * Puts the stylesheet into the document, once.
+ * Puts the stylesheet where `anchor` lives, once per root.
  *
  * Several posts may sit on one page, and every block would otherwise add its
  * own copy. The id is both the marker and the way back to it.
+ *
+ * Where that is differs by editor: `document.head` for a classic page, the
+ * page's shadow root in the Content Designer — see `@shared/style-root`.
  */
-export function ensureStyles(doc: Document = document): void {
-  if (doc.getElementById(STYLE_ELEMENT_ID) !== null) return;
-  const style = doc.createElement("style");
-  style.id = STYLE_ELEMENT_ID;
-  style.textContent = POST_DISPLAY_CSS;
-  doc.head.appendChild(style);
+export function ensureStyles(anchor?: Node | null): void {
+  ensureStyleElement(anchor, STYLE_ELEMENT_ID, POST_DISPLAY_CSS);
 }

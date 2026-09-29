@@ -1,43 +1,51 @@
-# Perguntas Frequentes
+# FAQ
 
-**Pergunta:** Aparece a mensagem «Não há nenhum ID de publicação configurado. Introduza o ID da
-publicação nas definições do widget.»
+**Pergunta:** Parece "Sem ID de post configurado. Por favor, insira o ID do
+poste nas configurações do widget." 
 
-Resposta: O campo **ID da publicação** está vazio. Copie o endereço completo da
-publicação para esse campo e guarde.
+Resposta: Nada é selecionado em **Contribuição**. A postagem da lista
+— ou insira o endereço completo do correio — e
+Armazenar. 
 
-**Pergunta:** Aparece a mensagem «Não foi possível carregar a publicação».
+**Pergunta:** "Post not could be load" aparece. 
 
-Resposta: O widget não consegue aceder à publicação. Causas habituais: o ID
-está incorreto, a publicação foi eliminada ou retirada, ou a pessoa que está a ler
-não tem permissão para a ver. Para verificar, insira novamente o endereço completo da publicação
-e aceda à página como membro do público-alvo.
+Resposta: O widget não chega ao post. Causas comuns: o ID
+não é verdade, o post foi deletado ou retirado, ou a leitura
+A pessoa não pode vê-la. Para verificação, o endereço completo do correio
+e chame a página como membro do grupo-alvo. 
 
-**Pergunta:** Aparece a mensagem «A publicação não contém conteúdos exibíveis.»
+**Pergunta:** Diz "A postagem não contém nenhum conteúdo visível." 
 
-Resposta: A publicação foi encontrada, mas, no idioma exibido, não tem
-nem título, nem teaser, nem texto — na maioria das vezes, trata-se de um rascunho vazio ou de uma
-versão linguística criada, mas não preenchida.
+Resposta: O artigo foi encontrado, mas no idioma exibido não foi encontrado
+nem título, nem teaser, nem texto — geralmente um rascunho em branco ou um
+Criada, mas não preenchida versão em idioma. 
 
-**Pergunta:** Por que é que faltam comentários, «gostos», autor e data?
+**Pergunta:** Por que comentários, curtidas, autor e data estão faltando? 
 
-Resposta: O widget mostra deliberadamente apenas o título, o teaser e o texto. Para ver a
-publicação na íntegra, não há como contornar a publicação original — o melhor é
-incluir também um link para lá.
+Resposta: O widget mostra deliberadamente apenas o título, teaser e texto. Para o texto completo
+Não há como contornar o post original — é melhor chegar lá
+Além disso. 
 
-**Pergunta:** Por que razão alguém vê uma versão linguística diferente da minha?
+**Pergunta:** Por que alguém vê uma versão diferente da minha? 
 
-Resposta: É apresentado o idioma que corresponde à página ou ao navegador da
-pessoa que está a ler, e não o idioma original da publicação. Se a
-versão correspondente não existir, é apresentada uma versão disponível.
+Resposta: O idioma que pertence à página ou navegador do
+pessoa lendo, não o idioma original do post. O
+versão adequada, uma versão existente é mostrada. 
 
-**Pergunta:** Posso usar isto para mostrar uma publicação que, na verdade, alguém não
-deveria ver?
+**Pergunta:** Posso mostrar um post que alguém realmente não tem
+? 
 
-Resposta: Não. A publicação é carregada quando a pessoa que está a ler inicia sessão;
-sem autorização, permanece invisível.
+Resposta: Não. A postagem está carregada com o registro da pessoa que está lendo; 
+sem autorização, ele permanece invisível. 
 
-**Pergunta:** Posso apresentar várias publicações num único widget?
+**Pergunta:** Posso exibir múltiplas postagens em um único widget? 
 
-Resposta: Não, um widget apresenta exatamente uma publicação. Para várias publicações,
-coloque vários widgets.
+Resposta: Não, um widget mostra exatamente uma postagem. Para múltiplas postagens
+Coloque vários widgets. 
+
+**Pergunta:** Parece que "A lista de postagens não pôde ser carregada. 
+Por favor, insira o ID do posto." 
+
+Resposta: A lista de contribuições não pôde ser recuperada no momento. A
+copie o endereço completo da postagem no campo **Post** e
+— o widget funciona da mesma forma.

@@ -1,43 +1,51 @@
 # FAQ
 
-**Pytanie:** Wyświetla się komunikat: „Nie skonfigurowano identyfikatora wpisu. Proszę wprowadzić identyfikator
-wpisu w ustawieniach widżetu”.
+**Pytanie:** Wygląda na to, że "Nie skonfigurowano ID postu. Proszę wpisać ID
+Umieść w ustawieniach widgetów." 
 
-Odpowiedź: Pole **ID wpisu** jest puste. Wklej do niego pełny adres
-wpisu i zapisz.
+Odpowiedź: Nic nie jest wybrane w **Wkład**. Post z listy
+— lub wpisać pełny adres poczty — oraz
+sklep. 
 
-**Pytanie:** Pojawia się komunikat „Nie udało się załadować wpisu”.
+**Pytanie:** Pojawia się "Post nie mógł być załadowany". 
 
-Odpowiedź: Widżet nie ma dostępu do wpisu. Typowe przyczyny: nieprawidłowy identyfikator,
-wpis został usunięty lub wycofany albo osoba przeglądająca
-nie ma uprawnień do jego wyświetlania. Aby to sprawdzić, wklej ponownie pełny adres wpisu
-i wyświetl stronę jako członek grupy docelowej.
+Odpowiedź: Widżet nie dociera do posta. Typowe przyczyny: ID
+nie jest prawdą, post został usunięty lub wycofany, albo sama lektura
+Osoba nie może go zobaczyć. Do sprawdzania, pełny adres poczty
+i wywołać stronę jako członka grupy docelowej. 
 
-**Pytanie:** Pojawia się komunikat „Post nie zawiera treści, które można wyświetlić”.
+**Pytanie:** Jest napisane: "Post nie zawiera żadnej treści do oglądania." 
 
-Odpowiedź: Post został znaleziony, ale w wyświetlanym języku nie ma
-ani tytułu, ani zapowiedzi, ani tekstu — zazwyczaj jest to pusty szkic lub
-utworzona, ale nieuzupełniona wersja językowa.
+Odpowiedź: Artykuł został znaleziony, ale w przedstawionym języku nie został
+ani tytułu, ani teasera, ani tekstu — zazwyczaj to czysty szkic lub
+Stworzone, ale nie wypełnione w wersji językowej. 
 
-**Pytanie:** Dlaczego brakuje komentarzy, polubień, autora i daty?
+**Pytanie:** Dlaczego brakuje komentarzy, polubień, autora i daty? 
 
-Odpowiedź: Widżet celowo wyświetla tylko tytuł, fragment wprowadzający i treść. Aby uzyskać pełny
-widok wpisu, nie da się ominąć oryginalnego wpisu — najlepiej
-dodać do niego dodatkowy link.
+Odpowiedź: Widżet celowo pokazuje tylko tytuł, teaser i tekst. Pełna informacja
+Nie da się obejść oryginalnego wpisu — najlepiej tam dotrzeć
+Dodatkowo. 
 
-**Pytanie:** Dlaczego ktoś widzi inną wersję językową niż ja?
+**Pytanie:** Dlaczego ktoś widzi inną wersję językową niż ja? 
 
-Odpowiedź: Wyświetlana jest wersja językowa dopasowana do strony lub przeglądarki
-osoby czytającej, a nie język oryginalny wpisu. Jeśli nie istnieje
-odpowiednia wersja, wyświetlana jest ta, która jest dostępna.
+Odpowiedź: Język należący do strony lub przeglądarki
+Osoba czytająca, a nie oryginalny język posta. Czy
+odpowiednia wersja, istniejąca jest pokazana. 
 
-**Pytanie:** Czy mogę w ten sposób wyświetlić wpis, którego ktoś właściwie nie
-powinien oglądać?
+**Pytanie:** Czy mogę pokazać post, którego ktoś tak naprawdę nie robi
+? 
 
-Odpowiedź: Nie. Wpis jest ładowany po zalogowaniu się osoby czytającej;
-bez uprawnień pozostaje niewidoczny.
+Odpowiedź: Nie. Post jest wypełniony rejestracją osoby czytającej; 
+Bez upoważnienia pozostaje niewidzialny. 
 
-**Pytanie:** Czy mogę wyświetlić kilka wpisów w jednym widżecie?
+**Pytanie:** Czy mogę wyświetlić wiele postów w jednym widżecie? 
 
-Odpowiedź: Nie, jeden widżet wyświetla dokładnie jeden wpis. Aby wyświetlić kilka wpisów,
-należy umieścić kilka widżetów.
+Odpowiedź: Nie, widżet pokazuje dokładnie jeden post. Dla wielu postów
+Umieść wiele widgetów. 
+
+**Pytanie:** Wygląda na to, że "Lista postów nie mogła zostać załadowana. 
+Proszę wpisać ID poczty." 
+
+Odpowiedź: Lista wkładów nie została obecnie dostępna. The
+Przepisuj pełny adres posta do pola **Post** oraz
+— widget działa w ten sam sposób.

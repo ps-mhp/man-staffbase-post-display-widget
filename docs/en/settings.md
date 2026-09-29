@@ -2,7 +2,7 @@
 
 | Setting | Description |
 | --- | --- |
-| Post ID | The post to be displayed. Required field. The easiest way is to enter the full post URL; alternatively, use the 24-character string at the end of that URL. |
+| Post | The post to be displayed. Required field. Select **Select post ...** from the list (the most recent 100 posts, with channel and date). If it is missing, select **Enter other post ID ...** and insert the full post address or the 24-digit string from the end of this address. |
 
-There are no other settings to configure. The display, order of elements, and
-language are determined automatically.
+There is nothing more to set up. Display, order of the elements and
+Language arise automatically.

@@ -1,30 +1,30 @@
-# Affichage d'un article
+# Affichage des postes
 
-L'affichage d'un article permet de récupérer un article Staffbase déjà publié
-et de l'afficher à un autre endroit : vous insérez le widget sur une page, vous saisissez l'
-ID de l'article — et celui-ci s'affiche directement à la lecture, au lieu d'apparaître simplement
-sous forme de lien.
+L’annonce de publication reprend un post déjà publié sur la Staffbase
+un autre endroit : vous placez le widget sur une page, sélectionnez le
+Publiez à partir d’une liste — et l’article y apparaîtra directement pour lecture, et non seulement
+comme lien. 
 
-Cas d'utilisation typiques : mettre en avant une annonce importante sur la page d'accueil,
-intégrer un article sur une page d'équipe ou de campagne, créer une page d'accueil à partir
-d'articles existants.
+Occasions typiques : répétez un message important sur la page d’accueil,
+Intégrez un post sur une page d’équipe ou de campagne, créez une page d’atterrissage à partir de
+contributions existantes. 
 
-## Ce qui s'affiche
+## Ce qui est affiché
 
-**Le titre, le teaser et le corps du texte** de l’article — y compris les images dans le texte.
-Ne sont pas repris : les commentaires, les « J’aime », les pièces jointes, les informations sur l’auteur et
-la date, ainsi qu’un lien vers l’article original. Si vous avez besoin de ces éléments, ajoutez
-en plus un lien classique vers l’article.
+**Titre, teaser et texte du texte** du post — y compris les images du texte. 
+Commentaires, likes, pièces jointes, auteur et
+Date et un lien vers le post original. Si vous avez besoin des deux,
+De plus, un lien normal vers le post. 
 
-## Bon à savoir
+## Important à savoir
 
-- Le widget **ne copie rien**. Il affiche toujours l’état actuel de l’
-  article : si l’article est modifié par la suite, l’affichage
-  ici change également.
-- **Les autorisations restent en vigueur.** L'article est chargé en fonction de la connexion de la
-  personne qui le lit. Si vous n'êtes pas autorisé à voir l'article dans sa version originale, vous
-  ne le verrez pas non plus ici. Le widget ne constitue donc pas un moyen de contourner les groupes cibles
-  .
-- **Langue :** la version linguistique affichée correspond à la langue du site ou
-  du navigateur. Si l'article n'existe que dans une autre langue, c'est
-  celle-ci qui s'affiche — plutôt que rien du tout.
+- Le widget **ne copie rien**. Il affiche toujours l’état actuel de la
+  Post : Si le post est modifié plus tard, l’affichage changera également
+  Tiens. 
+- **Les permissions resteront.** La contribution sera effectuée lors de l’enregistrement de la
+  personne en train de lire. Si vous n’êtes pas autorisé à voir l’article original, vous verrez
+  Pas lui ici non plus. Donc le widget n’est pas un raccourci vers les groupes cibles
+  Terminé. 
+- **Langue :** La version linguistique correspondant à la langue de la page ou 
+  du navigateur. Si l’article n’est disponible qu’en une autre langue, il sera
+  ceux-ci — au lieu de rien du tout.

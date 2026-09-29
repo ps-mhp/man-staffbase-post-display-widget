@@ -1,6 +1,6 @@
 {
-  "title": "Anúncio de contribuição",
-  "summary": "Exibe uma publicação do Staffbase diretamente noutra página.",
+  "title": "Pós-exibição",
+  "summary": "Exibe uma postagem publicada no Staffbase diretamente em outra página.",
   "pages": [
     {
       "id": "overview",
@@ -14,18 +14,18 @@
     },
     {
       "id": "settings",
-      "title": "Definições",
+      "title": "Configurações",
       "file": "settings.md"
     },
     {
       "id": "faq",
-      "title": "Perguntas Frequentes",
+      "title": "FAQ",
       "file": "faq.md"
     }
   ],
   "examples": [
     {
-      "title": "Artigo",
+      "title": "Contribuição",
       "attributes": {},
       "resolve": [
         "post-id"

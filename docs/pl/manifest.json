@@ -1,6 +1,6 @@
 {
-  "title": "Ogłoszenie o składce",
-  "summary": "Wyświetla opublikowany wpis w Staffbase bezpośrednio na innej stronie.",
+  "title": "Ekspozycja po występie",
+  "summary": "Wyświetla opublikowany post Staffbase bezpośrednio na innej stronie.",
   "pages": [
     {
       "id": "overview",
@@ -19,13 +19,13 @@
     },
     {
       "id": "faq",
-      "title": "Najczęściej zadawane pytania",
+      "title": "FAQ",
       "file": "faq.md"
     }
   ],
   "examples": [
     {
-      "title": "Artykuł",
+      "title": "Wkład",
       "attributes": {},
       "resolve": [
         "post-id"

@@ -1,30 +1,30 @@
-# Wyświetlanie wpisu
+# Ekspozycja po występie
 
-Funkcja wyświetlania wpisu pozwala przenieść już opublikowany wpis w Staffbase
-w inne miejsce: umieszczasz widżet na stronie, wpisujesz
-identyfikator wpisu — a wpis pojawia się tam bezpośrednio do przeczytania, a nie tylko
-jako link.
+Reklama wpisu nawiązuje do już opublikowanego wpisu na Staffbase
+Inne miejsce: Umieszczasz widget na stronie, wybierasz
+Publikuj z listy — a wpis pojawi się tam bezpośrednio do czytania, a nie tylko
+jako link. 
 
-Typowe zastosowania: powtórzenie ważnej wiadomości na stronie głównej,
-osadzenie wpisu na stronie zespołu lub kampanii, stworzenie strony docelowej z
-istniejących wpisów.
+Typowe okazje: powtórz ważną wiadomość na stronie głównej,
+Osadz post na stronie zespołu lub kampanii, stwórz stronę docelową z
+istniejące wkłady. 
 
-## Co jest wyświetlane
+## Co jest pokazane
 
-**Tytuł, zapowiedź i treść** wpisu — łącznie z obrazami w tekście.
-Nie są przenoszone komentarze, polubienia, załączniki, informacje o autorach i
-dacie oraz link do oryginalnego wpisu. Jeśli potrzebujesz obu tych elementów, umieść
-dodatkowo zwykły link do wpisu.
+**Tytuł, zapowiedź i tekst główny** posta — włącznie z obrazami w tekście. 
+Komentarze, polubienia, załączniki, autorzy i
+Data i link do oryginalnego wpisu. Jeśli potrzebujesz obu informacji,
+Dodatkowo normalny link do posta. 
 
-## Co warto wiedzieć
+## Ważne do wiedzy
 
-- Widżet **nic nie kopiuje**. Zawsze wyświetla aktualny stan
-  wpisu: jeśli wpis zostanie później edytowany, zmieni się również jego wyświetlanie
-  w tym miejscu.
-- **Uprawnienia pozostają niezmienione.** Post jest ładowany po zalogowaniu się
-  osoby czytającej. Kto nie ma uprawnień do wyświetlania oryginalnego posta, nie zobaczy
-  go również tutaj. Widżet nie jest więc sposobem na ominięcie grup docelowych
-  .
-- **Język:** Wyświetlana jest wersja językowa, która odpowiada językowi strony lub
-  przeglądarki. Jeśli wpis jest dostępny tylko w innym języku,
-  zostanie on wyświetlony — zamiast pustej strony.
+- Widżet **nie kopiuje niczego**. Zawsze pokazuje aktualny stan
+  Post: Jeśli post zostanie później edytowany, zmieni się także wyświetlacz
+  Proszę. 
+- **Pozwolenia pozostaną w tajemnicy.** Wkład zostanie dokonany poprzez rejestrację
+  osoba czytająca. Jeśli nie wolno ci zobaczyć oryginalnego artykułu, zobaczysz
+  Nie jest też on tutaj. Więc widget nie jest skrótem do grup docelowych
+  Koniec. 
+- **Język:** Wersja językowa odpowiadająca językowi strony lub 
+  przeglądarki. Jeśli artykuł jest dostępny tylko w innym języku, będzie
+  Te — zamiast niczego.

@@ -1,8 +1,8 @@
 # Ustawienia
 
-| Ustawienie | Opis |
+| Miejsce akcji | Opis |
 | --- | --- |
-| Identyfikator wpisu | Wpis, który ma zostać wyświetlony. Pole obowiązkowe. Najprościej jest wkleić pełny adres wpisu; alternatywnie można użyć 24-znakowego ciągu znaków z końca tego adresu. |
+| Post | Post do wyświetlenia. Pole wymagane. Wybierz **Wybierz post ...** z listy (najnowsze 100 postów, z kanałem i datą). Jeśli go brakuje, wybierz **Wprowadź inny ID posta ...** i wstaw pełny adres posta lub 24-cyfrowy ciąg z końca tego adresu. |
 
-Nie ma nic więcej do ustawiania. Wygląd, kolejność elementów i
-język są ustalane automatycznie.
+Nie ma już nic do ustawienia. Ekspozycja, kolejność elementów i
+Język pojawia się automatycznie.

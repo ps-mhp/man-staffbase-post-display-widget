@@ -1,6 +1,6 @@
 {
-  "title": "Anuncio de la publicación",
-  "summary": "Muestra una publicación de Staffbase directamente en otra página.",
+  "title": "Exhibición posterior",
+  "summary": "Muestra una publicación publicada de Staffbase directamente en otra página.",
   "pages": [
     {
       "id": "overview",
@@ -14,7 +14,7 @@
     },
     {
       "id": "settings",
-      "title": "Configuración",
+      "title": "Escenarios",
       "file": "settings.md"
     },
     {
@@ -25,7 +25,7 @@
   ],
   "examples": [
     {
-      "title": "Artículo",
+      "title": "Contribución",
       "attributes": {},
       "resolve": [
         "post-id"

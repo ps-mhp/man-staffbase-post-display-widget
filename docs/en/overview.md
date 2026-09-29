@@ -1,30 +1,30 @@
-# Post Widget
+# Post display
 
-The Post Widget pulls a previously published Staffbase post
-to another location: You place the widget on a page, enter the
-post ID—and the post appears there ready to read, rather than just
-as a link.
+The post ad picks up an already published Staffbase post
+another place: You place the widget on a page, select the
+Post from a list — and the post will appear there directly for reading, instead of just
+as a link. 
 
-Typical use cases: repeating an important announcement on the homepage, embedding a
-post on a team or campaign page, or putting together a landing page from
-existing posts.
+Typical occasions: repeat an important message on the homepage,
+Embed a post on a team or campaign page, create a landing page from
+existing contributions. 
 
-## What Is Displayed
+## What is displayed
 
-**Title, teaser, and body text** of the post—including images within the text.
+**Title, teaser and body text** of the post — including the images in the text. 
 Comments, likes, attachments, author and
-date information, and a link to the original post are not included. If you need both,
-add a regular link to the post as well.
+date and a link to the original post. If you need both,
+in addition, a normal link to the post. 
 
-## Important to Know
+## Important to know
 
-- The widget **does not copy anything**. It always displays the current version of the
-  post: If the post is edited later, the display
-  here will also change.
-- **Permissions remain in effect.** The post is loaded based on the
-  reader’s login credentials. Anyone who is not authorized to view the original post
-  will not see it here either. The widget is therefore not a way to bypass
-  target audiences.
-- **Language:** The language version displayed matches the language of the page or
-  the browser. If the post is only available in another language,
-  that language is shown—rather than nothing at all.
+- The widget **doesn't copy anything**. It always shows the current state of the
+  Post: If the post is edited later, the display will also change
+  here. 
+- **Permissions will remain.** The contribution will be made with the registration of the
+  person reading. If you are not allowed to see the original article, you will see
+  not him here either. So the widget is not a shortcut to target groups
+  over. 
+- **Language:** The language version that corresponds to the language of the page or 
+  of the browser. If the article is only available in another language, it will be
+  these — instead of nothing at all.

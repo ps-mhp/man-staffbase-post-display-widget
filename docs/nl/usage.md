@@ -1,33 +1,39 @@
 # Stap voor stap
 
-## Een bericht insluiten
+## Embed post
 
-1. Open het gewenste bericht in Staffbase — het voltooide,
-   gepubliceerde bericht, niet het concept.
-2. Kopieer het **volledige adres** uit de adresbalk van de browser.
-3. Open de bestemmingspagina om deze te bewerken en sleep de widget **Berichtweergave** naar
-   de gewenste plek.
-4. Plak het gekopieerde adres in het veld **Bericht-ID**. De widget haalt
-   de ID zelf op — de 24-cijferige tekenreeks aan het einde van het adres
-   hoeft niet handmatig te worden opgezocht.
-5. Sla op en controleer in het voorbeeld.
+1. Open de landingspagina voor bewerking en selecteer de widget **Bericht bekijken**
+   Sleep de gewenste plek. 
+2. Selecteer in de instellingen onder **Post** de lijst **Post ...** 
+   en selecteer het bericht. Elke vermelding vermeldt de titel, het kanaal en de datum; 
+   De nieuwste berichten staan bovenaan. 
+3. Opslaan en bekijken. 
 
-Zolang er niets is ingevuld, staat op die plek de melding „Geen
-bericht-ID geconfigureerd“. Deze melding verschijnt ook op de
-gepubliceerde pagina — publiceer dus nooit met een leeg veld.
+Als de post niet in de lijst staat (de lijst toont de meest recente 100): 
 
-## Bericht vervangen
+1. Open het bericht in Staffbase en krijg het **volledige adres** van de
+   Kopieer de adresbalk van de browser. 
+2. Selecteer in de lijst **Voer andere post-ID in ...**. 
+3. Plak het gekopieerde adres in het veld. De ID leest de widget
+   — de 24-cijferige string aan het einde van het adres hoeft niet per se te zijn
+   kan met de hand worden uitgezocht. 
 
-1. Kopieer het adres van het nieuwe bericht.
-2. Plak deze in hetzelfde veld **Bericht-ID**; de oude waarde wordt daarbij
-   overschreven.
-3. Opslaan. Een tweede widget is niet nodig.
+Zolang er niets wordt ingevoerd, wordt de notitie "Geen
+post-ID". Deze kennisgeving verschijnt ook op de
+gepubliceerde pagina — dat wil zeggen, nooit publiceren met een leeg veld. 
 
-## Controleren wat anderen zien
+## Deel bericht
 
-1. Controleer welke doelgroep de pagina te zien krijgt.
-2. Controleer of deze doelgroep het ingesloten bericht ook mag zien.
-3. Open bij twijfel de pagina met een testaccount van deze doelgroep.
+1. Open de instellingen en open een ander bericht onder **Post**
+   (of een ander adres invoeren); de oude waarde is
+   . 
+2. Opslaan. Een tweede widget is niet nodig. 
 
-Het bericht wordt geladen met de rechten van de lezer: als redacteur ziet
-u mogelijk meer dan uw lezers.
+## Controleer wat anderen zien
+
+1. Controleer welke doelgroep de pagina ziet. 
+2. Controleer of deze doelgroep ook de ingesloten post mag zien. 
+3. Bij twijfel, open dan de pagina met een testaccount van deze doelgroep. 
+
+Het artikel laadt met de rechten van de persoon die leest: Zie als redacteur
+Misschien wil je meer dan alleen je lezers.

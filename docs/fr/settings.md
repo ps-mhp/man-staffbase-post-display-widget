@@ -1,8 +1,8 @@
-# Paramètres
+# Décors
 
-| Paramètre | Description |
+| Cadre | Description |
 | --- | --- |
-| ID de l'article | L'article à afficher. Champ obligatoire. Le plus simple est d'insérer l'adresse complète de l'article ; vous pouvez également utiliser la chaîne de 24 caractères figurant à la fin de cette adresse. |
+| Post | Le post à afficher. Champ requis. Sélectionnez **Sélectionner post ...** dans la liste (les 100 posts les plus récents, avec le canal et la date). S’il manque, sélectionnez **Entrer l’autre identifiant de post ...** et insérez l’adresse complète du post ou la chaîne de 24 chiffres à la fin de cette adresse. |
 
-Il n'y a rien d'autre à configurer. L'affichage, l'ordre des éléments et
-la langue sont déterminés automatiquement.
+Il n’y a plus rien à configurer. Affichage, ordre des éléments et
+Le langage surgit automatiquement.

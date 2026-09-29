@@ -1,8 +1,8 @@
 # Beitrags-Anzeige
 
 Die Beitrags-Anzeige holt einen bereits veröffentlichten Staffbase-Beitrag an
-eine andere Stelle: Sie setzen das Widget auf eine Seite, tragen die
-Beitrags-ID ein — und der Beitrag erscheint dort direkt zum Lesen, statt nur
+eine andere Stelle: Sie setzen das Widget auf eine Seite, wählen den
+Beitrag aus einer Liste — und der Beitrag erscheint dort direkt zum Lesen, statt nur
 als Link.
 
 Typische Anlässe: eine wichtige Meldung auf der Startseite wiederholen, einen

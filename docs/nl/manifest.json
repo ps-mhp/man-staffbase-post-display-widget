@@ -1,6 +1,6 @@
 {
-  "title": "Advertentie",
-  "summary": "Geeft een gepubliceerd Staffbase-bericht direct op een andere pagina weer.",
+  "title": "Post-display",
+  "summary": "Toont een gepubliceerd Staffbase-bericht direct op een andere pagina.",
   "pages": [
     {
       "id": "overview",
@@ -19,7 +19,7 @@
     },
     {
       "id": "faq",
-      "title": "Veelgestelde vragen",
+      "title": "FAQ",
       "file": "faq.md"
     }
   ],
