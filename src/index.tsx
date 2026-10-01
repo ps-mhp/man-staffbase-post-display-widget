@@ -25,7 +25,7 @@ import { fetchEntityCatalog } from "@shared/entity-picker/entity-catalog";
 import { startEntityPickerInjector } from "@shared/entity-picker/entity-picker-injector";
 import { configurationSchema, uiSchema } from "./configuration-schema";
 import { postCatalogSource } from "./post-catalog";
-import { readPostId } from "./post-content";
+import { readPostId } from "@shared/staffbase/posts";
 import { PostView } from "./post-view";
 import icon from "../resources/post-display-widget.svg";
 import pkg from "../package.json";

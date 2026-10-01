@@ -13,9 +13,9 @@
 
 import React from "react";
 
-import { fetchPost } from "./post-client";
-import { PostContent, pickLocalizedContent, userLocales } from "./post-content";
-import { ensureStyles } from "./styles";
+import { PostBody } from "@shared/staffbase/post-body";
+import { ensurePostStyles } from "@shared/staffbase/post-styles";
+import { Post, PostContent, pickLocalizedContent, requestPost, userLocales } from "@shared/staffbase/posts";
 
 const MISSING_ID = "Keine Beitrags-ID konfiguriert. Bitte die ID des Beitrags in den Widget-Einstellungen eintragen.";
 const NO_CONTENT = "Der Beitrag enthält keine anzeigbaren Inhalte.";
@@ -23,20 +23,8 @@ const NO_CONTENT = "Der Beitrag enthält keine anzeigbaren Inhalte.";
 /** What the view knows at any moment. */
 type State =
   | { status: "loading" }
-  | { status: "ready"; content: PostContent }
+  | { status: "ready"; post: Post; content: PostContent }
   | { status: "error"; message: string };
-
-/**
- * A part of the post, rendered as the HTML it is.
- *
- * The markup comes from the same Staffbase backend that the surrounding page
- * comes from, written through the editor that already governs what a post may
- * contain. Escaping it here would show authors their own tags as text.
- */
-function Html({ html, className }: { html: string; className: string }): React.JSX.Element | null {
-  if (html.trim() === "") return null;
-  return <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
-}
 
 /**
  * A single Staffbase post, in the language of the reader.
@@ -54,7 +42,7 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
   // root this element was rendered into, which is a shadow root in the
   // Content Designer (see `@shared/style-root`).
   const anchorStyles = React.useCallback((element: HTMLElement | null) => {
-    if (element !== null) ensureStyles(element);
+    if (element !== null) ensurePostStyles(element);
   }, []);
 
   React.useEffect(() => {
@@ -68,14 +56,19 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
     let current = true;
     setState({ status: "loading" });
 
-    Promise.all([fetchPost(postId), userLocales()])
-      .then(([post, locales]) => {
+    Promise.all([requestPost(postId), userLocales()])
+      .then(([response, locales]) => {
         if (!current) return;
-        const content = pickLocalizedContent(post.contents, locales);
+        if (response.post === null) {
+          const reason = response.status === null ? "keine Antwort" : `HTTP ${response.status}`;
+          setState({ status: "error", message: `Beitrag konnte nicht geladen werden: ${reason}` });
+          return;
+        }
+        const content = pickLocalizedContent(response.post.contents, locales);
         setState(
           content === null
             ? { status: "error", message: NO_CONTENT }
-            : { status: "ready", content },
+            : { status: "ready", post: response.post, content },
         );
       })
       .catch((error: unknown) => {
@@ -107,12 +100,9 @@ export function PostView({ postId }: { postId: string | null }): React.JSX.Eleme
     );
   }
 
-  const { title, teaser, content } = state.content;
   return (
     <article ref={anchorStyles} className="post-display" data-testid="post-display">
-      <Html html={title ?? ""} className="post-display__title" />
-      <Html html={teaser ?? ""} className="post-display__teaser" />
-      <Html html={content ?? ""} className="post-display__body" />
+      <PostBody post={state.post} content={state.content} />
     </article>
   );
 }
