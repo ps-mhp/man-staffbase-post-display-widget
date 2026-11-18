@@ -24,6 +24,7 @@ import { SidebarPanel } from "@man/config-ui/sidebar/sidebar-panel";
 import { SidebarSearch } from "@man/config-ui/sidebar/sidebar-search";
 import { ItemList, type ListItem } from "@man/config-ui/sidebar/item-list";
 import { StatusBar } from "@man/config-ui/toolbar/status-bar";
+import { useEntityCatalog } from "@shared/entity-picker/use-entity-catalog";
 import { readPostId } from "@shared/staffbase/posts";
 
 import { PostOption, fetchPostOptions } from "./post-catalog";
@@ -43,25 +44,8 @@ export interface PostEditorProps {
   loadPosts?: () => Promise<PostOption[]>;
 }
 
-type Catalog = { status: "loading" } | { status: "ready"; options: PostOption[] };
-
 function toListItem(option: PostOption): ListItem {
   return { id: option.id, label: option.title, description: option.meta === "" ? undefined : option.meta };
-}
-
-/** Lädt die Beitragsliste einmal, wenn der Editor erscheint. */
-function useCatalog(loadPosts: () => Promise<PostOption[]>): Catalog {
-  const [catalog, setCatalog] = useState<Catalog>({ status: "loading" });
-  useEffect(() => {
-    let current = true;
-    loadPosts()
-      .then((options) => current && setCatalog({ status: "ready", options }))
-      .catch(() => current && setCatalog({ status: "ready", options: [] }));
-    return () => {
-      current = false;
-    };
-  }, [loadPosts]);
-  return catalog;
 }
 
 /**
@@ -72,14 +56,14 @@ function useCatalog(loadPosts: () => Promise<PostOption[]>): Catalog {
  * Es gibt nichts weiter einzustellen als den Beitrag, deshalb kein Inspektor.
  */
 export function PostEditor({ value, onChange, loadPosts = fetchPostOptions }: PostEditorProps): ReactElement {
-  const catalog = useCatalog(loadPosts);
+  const catalog = useEntityCatalog(loadPosts);
   const { setView, issuesVisible } = useConfigShell();
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [wantsInput, setWantsInput] = useState(false);
 
   const postId = readPostId(value);
-  const options = catalog.status === "ready" ? catalog.options : [];
+  const options = catalog.items;
   const shown = useMemo(() => filterPosts(options, query), [options, query]);
   const items = useMemo(() => shown.map(toListItem), [shown]);
   const known = postId !== null && options.some((option) => option.id === postId);
