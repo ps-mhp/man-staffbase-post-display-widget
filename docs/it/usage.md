@@ -1,39 +1,40 @@
 # Passo dopo passo
 
-## Inserisci il post
+## Incorporare un post
 
-1. Apri la landing page per la modifica e seleziona il widget **Visualizza post****
-   Trascina il punto desiderato. 
-2. Nelle impostazioni sotto **Post** seleziona la lista **Post ...** 
-   e seleziona il post. Ogni voce menziona il titolo, il canale e la data; 
-   Gli ultimi post sono in cima. 
-3. Salva e anteprima. 
+1. Aprire la pagina di destinazione da modificare e trascinare il widget **Visualizzazione post**
+   nella posizione desiderata.
+2. Nel widget, selezionare **Seleziona post**. Apparirà una finestra a schermo intero; a sinistra
+   è presente l’elenco **Post**. Ogni voce riporta titolo, canale e data;
+   i post più recenti sono in cima, la ricerca filtra per titolo e canale.
+3. Clicca sul post nell’elenco.
+4. Controlla come appare il
+   post nelle sezioni **Desktop**, **Tablet** e **Mobile** nella parte superiore della finestra, quindi clicca su **Applica**.
 
-Se il post non è nella lista (la lista mostra le ultime 100): 
+Se il post non è presente nell’elenco (l’elenco mostra i 100 più recenti):
 
-1. Apri il post in Staffbase e ottieni l'**indirizzo completo** dal
-   Copia la barra degli indirizzi del browser. 
-2. Nella lista seleziona **Inserisci l'altro ID del post ...**. 
-3. Incolla l'indirizzo copiato nel campo. L'ID legge il widget
-   — la stringa di 24 cifre alla fine dell'indirizzo non deve necessariamente essere
-   può essere selezionato a mano. 
+1. Aprire il post in Staffbase e copiare l’**indirizzo completo** dalla
+   barra degli indirizzi del browser.
+2. Sotto l’elenco, selezionare **Inserisci ID o indirizzo**.
+3. Incollare l’indirizzo copiato nel campo **ID o indirizzo**. L’ID viene
+   rilevato automaticamente dal widget: non è necessario individuare manualmente la stringa di 24 caratteri alla fine dell’
+  indirizzo.
 
-Finché non viene inserito nulla, la nota "Nessuno
-post ID". Questo avviso appare anche sul
-pagina pubblicata — cioè non pubblicare mai con un campo vuoto. 
+Finché non viene inserito nulla, in quel punto compare l’avviso «Nessun
+ID articolo configurato». Questo messaggio appare anche sulla
+pagina pubblicata — quindi non pubblicare mai con il campo vuoto.
 
-## Condividi il post
+## Sostituire l’articolo
 
-1. Apri le impostazioni e apri un altro post sotto **Post**
-   (o inserire un indirizzo diverso); il valore vecchio è
-   . 
-2. Salva. Un secondo widget non è necessario. 
+1. Aprire **Seleziona articolo** e scegliere un altro articolo dall’elenco
+   (oppure inserire un altro indirizzo); il valore precedente verrà sovrascritto.
+2. **Applica**. Non è necessario un secondo widget.
 
-## Controlla cosa vedono gli altri
+## Verificare cosa vedono gli altri
 
-1. Controlla quale pubblico sta vedendo la pagina. 
-2. Controlla se anche questo gruppo target può vedere il post incorporato. 
-3. In caso di dubbio, apri la pagina con un account di test di questo gruppo target. 
+1. Verificare quale gruppo target visualizza la pagina.
+2. Verificare se questo gruppo target sia autorizzato a visualizzare anche il post incorporato.
+3. In caso di dubbio, accedere alla pagina con un account di prova appartenente a quel gruppo target.
 
-L'articolo è caricato con i diritti della persona che legge: Vedi come editor
-Potresti volere più dei tuoi lettori.
+Il post viene caricato in base ai diritti dell’utente che lo legge: in qualità di redattore/redattrice,
+potrebbe vedere più contenuti rispetto ai propri lettori.

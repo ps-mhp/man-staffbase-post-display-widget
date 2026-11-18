@@ -1,39 +1,40 @@
-# Step by step
+# Step by Step
 
-## Embed post
+## Embed a Post
 
-1. Open the landing page for editing and select the **Post View** widget
-   drag the desired spot. 
-2. In the settings under **Post** select the list **Post ...** 
-   and select the post. Each entry mentions the title, channel and date; 
-   the latest posts are at the top. 
-3. Save and preview. 
+1. Open the target page for editing and drag the **Post Display** widget to
+   the desired location.
+2. Open the **Select Post** widget. A full-screen window will appear; on the left
+   is the **Posts** list. Each entry shows the title, channel, and date;
+   the most recent posts appear at the top, and the search filters by title and channel.
+3. Click on the post in the list.
+4. Use the **Desktop**, **Tablet**, and **Mobile** tabs at the top of the window to check how the
+   post looks, then click **Apply**.
 
-If the post is not in the list (the list shows the most recent 100): 
+If the post isn’t in the list (the list shows the 100 most recent):
 
-1. Open the post in Staffbase and get the **complete address** from the
-   Copy the address bar of the browser. 
-2. In the list select **Enter other post ID ...**. 
-3. Paste the copied address into the field. The ID reads the widget
-   — the 24-digit string at the end of the address doesn't have to be
-   can be picked out by hand. 
+1. Open the post in Staffbase and copy the **full URL** from the
+   browser’s address bar.
+2. Below the list, select **Enter ID or URL**.
+3. Paste the copied address into the **ID or Address** field. The widget
+   automatically retrieves the ID—you don’t need to manually extract the
+   24-character string at the end of the address.
 
-As long as nothing is entered, the note "None
-post ID". This notice also appears on the
-published page — i.e. never publish with an empty field. 
+As long as nothing is entered, the message “No
+post ID configured.” This message also appears on the
+published page—so never publish with an empty field.
 
-## Share post
+## Replace a Post
 
-1. Open the settings and open another post under **Post**
-   (or enter a different address); the old value is
-   . 
-2. Save. A second widget is not necessary. 
+1. Open **Select Post** and choose a different post from the list
+   (or enter a different address); this will overwrite the old value.
+2. **Apply**. A second widget is not necessary.
 
-## Check what others see
+## Check What Others See
 
-1. Check which audience is seeing the page. 
-2. Check whether this target group is also allowed to see the embedded post. 
-3. If in doubt, open the page with a test account of this target group. 
+1. Check which audience can view the page.
+2. Check whether this audience is also allowed to view the embedded post.
+3. If in doubt, view the page using a test account for this audience.
 
-The article loads with the rights of the person reading: See as editor
-You may want more than your readers.
+The post loads with the permissions of the person viewing it: As an editor,
+you may see more than your readers do.

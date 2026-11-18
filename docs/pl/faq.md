@@ -1,51 +1,51 @@
 # FAQ
 
-**Pytanie:** Wygląda na to, że "Nie skonfigurowano ID postu. Proszę wpisać ID
-Umieść w ustawieniach widgetów." 
+**Pytanie:** Pojawia się komunikat: „Nie skonfigurowano identyfikatora wpisu. Proszę wprowadzić identyfikator
+wpisu w ustawieniach widżetu”.
 
-Odpowiedź: Nic nie jest wybrane w **Wkład**. Post z listy
-— lub wpisać pełny adres poczty — oraz
-sklep. 
+Odpowiedź: W oknie **Wybierz wpis** nic nie jest zaznaczone. Wybierz wpis z
+listy **Wpisy** — lub w polu **ID lub adres** wpisz pełny
+adres wpisu — a następnie kliknij **Zastosuj**.
 
-**Pytanie:** Pojawia się "Post nie mógł być załadowany". 
+**Pytanie:** Pojawia się komunikat „Nie udało się załadować wpisu”.
 
-Odpowiedź: Widżet nie dociera do posta. Typowe przyczyny: ID
-nie jest prawdą, post został usunięty lub wycofany, albo sama lektura
-Osoba nie może go zobaczyć. Do sprawdzania, pełny adres poczty
-i wywołać stronę jako członka grupy docelowej. 
+Odpowiedź: Widżet nie ma dostępu do wpisu. Typowe przyczyny: nieprawidłowy identyfikator
+, wpis został usunięty lub wycofany albo osoba przeglądająca
+nie ma uprawnień do jego wyświetlania. W celu sprawdzenia należy ponownie wprowadzić pełny adres wpisu
+i wyświetlić stronę jako członek grupy docelowej.
 
-**Pytanie:** Jest napisane: "Post nie zawiera żadnej treści do oglądania." 
+**Pytanie:** Pojawia się komunikat „Post nie zawiera treści, które można wyświetlić”.
 
-Odpowiedź: Artykuł został znaleziony, ale w przedstawionym języku nie został
-ani tytułu, ani teasera, ani tekstu — zazwyczaj to czysty szkic lub
-Stworzone, ale nie wypełnione w wersji językowej. 
+Odpowiedź: Post został znaleziony, ale w wyświetlanym języku nie ma
+ani tytułu, ani zapowiedzi, ani tekstu — zazwyczaj jest to pusty szkic lub
+utworzona, ale nieuzupełniona wersja językowa.
 
-**Pytanie:** Dlaczego brakuje komentarzy, polubień, autora i daty? 
+**Pytanie:** Dlaczego brakuje komentarzy, polubień, autora i daty?
 
-Odpowiedź: Widżet celowo pokazuje tylko tytuł, teaser i tekst. Pełna informacja
-Nie da się obejść oryginalnego wpisu — najlepiej tam dotrzeć
-Dodatkowo. 
+Odpowiedź: Widżet celowo wyświetla tylko tytuł, fragment wprowadzający i treść. Aby uzyskać pełny
+widok wpisu, nie da się ominąć oryginalnego wpisu — najlepiej
+dodać do niego dodatkowy link.
 
-**Pytanie:** Dlaczego ktoś widzi inną wersję językową niż ja? 
+**Pytanie:** Dlaczego ktoś widzi inną wersję językową niż ja?
 
-Odpowiedź: Język należący do strony lub przeglądarki
-Osoba czytająca, a nie oryginalny język posta. Czy
-odpowiednia wersja, istniejąca jest pokazana. 
+Odpowiedź: Wyświetlana jest wersja językowa dopasowana do strony lub przeglądarki
+osoby czytającej, a nie język oryginalny wpisu. Jeśli nie istnieje
+odpowiednia wersja, wyświetlana jest ta, która jest dostępna.
 
-**Pytanie:** Czy mogę pokazać post, którego ktoś tak naprawdę nie robi
-? 
+**Pytanie:** Czy mogę w ten sposób wyświetlić wpis, którego ktoś właściwie nie
+powinien widzieć?
 
-Odpowiedź: Nie. Post jest wypełniony rejestracją osoby czytającej; 
-Bez upoważnienia pozostaje niewidzialny. 
+Odpowiedź: Nie. Wpis jest ładowany po zalogowaniu się osoby czytającej;
+bez uprawnień pozostaje niewidoczny.
 
-**Pytanie:** Czy mogę wyświetlić wiele postów w jednym widżecie? 
+**Pytanie:** Czy mogę wyświetlić kilka wpisów w jednym widżecie?
 
-Odpowiedź: Nie, widżet pokazuje dokładnie jeden post. Dla wielu postów
-Umieść wiele widgetów. 
+Odpowiedź: Nie, jeden widżet wyświetla dokładnie jeden wpis. Aby wyświetlić kilka wpisów,
+należy umieścić kilka widżetów.
 
-**Pytanie:** Wygląda na to, że "Lista postów nie mogła zostać załadowana. 
-Proszę wpisać ID poczty." 
+**Pytanie:** Pojawia się komunikat: „Nie udało się załadować listy wpisów.
+Wprowadź identyfikator lub adres wpisu”.
 
-Odpowiedź: Lista wkładów nie została obecnie dostępna. The
-Przepisuj pełny adres posta do pola **Post** oraz
-— widget działa w ten sam sposób.
+Odpowiedź: W tej chwili nie udało się pobrać listy wpisów. Skopiuj
+pełny adres wpisu do pola **ID lub adres** i
+**Zastosuj** — widget będzie wtedy działał tak samo.

@@ -1,39 +1,40 @@
-# Pas à pas
+# Étape par étape
 
-## Encastrer le post
+## Intégrer un article
 
-1. Ouvrir la page d’accueil pour la modification et sélectionner le widget **Afficher les publications**
-   Faites glisser à l’endroit désiré. 
-2. Dans les paramètres sous **Post**, sélectionnez la liste **Post ...** 
-   et sélectionner la publication. Chaque entrée mentionne le titre, le canal et la date ; 
-   Les derniers articles sont en haut. 
-3. Sauvegarder et prévisualiser. 
+1. Ouvrez la page de destination à modifier et faites glisser le widget **Affichage d'article** à
+   l'emplacement souhaité.
+2. Dans le widget, cliquez sur **Sélectionner un article**. Une fenêtre en plein écran s'affiche ; à gauche
+   se trouve la liste **Articles**. Chaque entrée indique le titre, la chaîne et la date ;
+   les articles les plus récents apparaissent en haut, la recherche permet de filtrer par titre et par chaîne.
+3. Cliquez sur la publication dans la liste.
+4. Vérifiez l’affichage de la
+   publication via les onglets **Ordinateur**, **Tablette** et **Mobile** en haut de la fenêtre, puis cliquez sur **Appliquer**.
 
-Si le post n’est pas dans la liste (la liste montre les 100 plus récents) : 
+Si la publication ne figure pas dans la liste (celle-ci affiche les 100 plus récentes) :
 
-1. Ouvrez le post dans Staffbase et obtenez l'**adresse complète** auprès de la
-   Copiez la barre d’adresses du navigateur. 
-2. Dans la liste, sélectionnez **Entrer l’autre identifiant de poste...**. 
-3. Collez l’adresse copiée dans le champ. L’ID lit le widget
-   — la chaîne de 24 chiffres à la fin de l’adresse n’a pas besoin d’être
-   On peut le choisir à la main. 
+1. Ouvrez la publication dans Staffbase et copiez l’**adresse complète** depuis la
+   barre d’adresse du navigateur.
+2. Sous la liste, sélectionnez **Saisir l’ID ou l’adresse**.
+3. Collez l’adresse copiée dans le champ **ID ou adresse**. Le widget récupère
+   lui-même l’ID — il n’est pas nécessaire de rechercher manuellement la chaîne de
+   24 caractères à la fin de l’adresse.
 
-Tant que rien n’est inscrit, la note « Aucun
-poste. » Cet avis apparaît également sur le
-page publiée — c’est-à-dire ne jamais publier avec un champ vide. 
+Tant que rien n’est saisi, la mention suivante s’affiche « Aucun
+ID d’article configuré » s’affiche. Ce message apparaît également sur la
+page publiée — ne publiez donc jamais avec un champ vide.
 
-## Partager le post
+## Remplacer un article
 
-1. Ouvrez les paramètres et ouvrez un autre post sous **Post**
-   (ou entrer une adresse différente) ; l’ancienne valeur est
-   . 
-2. Sauvegarder. Un second widget n’est pas nécessaire. 
+1. Ouvrez **Sélectionner un article** et choisissez un autre article dans la liste
+   (ou saisir une autre adresse) ; l’ancienne valeur sera alors écrasée.
+2. **Appliquer**. Un deuxième widget n’est pas nécessaire.
 
-## Vérifie ce que les autres voient
+## Vérifier ce que les autres voient
 
-1. Vérifiez quel public voit la page. 
-2. Vérifiez si ce groupe cible est également autorisé à voir la publication intégrée. 
-3. En cas de doute, ouvrez la page avec un compte test de ce groupe cible. 
+1. Vérifiez quel groupe cible voit la page.
+2. Vérifiez si ce groupe cible est également autorisé à voir l’article intégré.
+3. En cas de doute, consultez la page avec un compte test appartenant à ce groupe cible.
 
-L’article se charge avec les droits de la personne qui lit : Voir en tant qu’éditeur
-Vous pourriez en vouloir plus que vos lecteurs.
+L’article se charge en fonction des droits de la personne qui le lit : en tant que rédacteur·trice,
+vous pouvez, dans certains cas, voir davantage d’informations que vos lectrices et lecteurs.

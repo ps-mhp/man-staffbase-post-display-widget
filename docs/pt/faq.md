@@ -1,51 +1,51 @@
-# FAQ
+# Perguntas Frequentes
 
-**Pergunta:** Parece "Sem ID de post configurado. Por favor, insira o ID do
-poste nas configurações do widget." 
+**Pergunta:** Aparece a mensagem «Não foi configurado nenhum ID de publicação. Por favor, introduza o ID da
+publicação nas definições do widget.»
 
-Resposta: Nada é selecionado em **Contribuição**. A postagem da lista
-— ou insira o endereço completo do correio — e
-Armazenar. 
+Resposta: Na janela **Selecionar publicação** não está nada selecionado. Selecione a publicação na
+lista **Publicações** — ou, em **ID ou endereço**, introduza o endereço completo
+da publicação — e clique em **Aplicar**.
 
-**Pergunta:** "Post not could be load" aparece. 
+**Pergunta:** Aparece a mensagem «Não foi possível carregar a publicação».
 
-Resposta: O widget não chega ao post. Causas comuns: o ID
-não é verdade, o post foi deletado ou retirado, ou a leitura
-A pessoa não pode vê-la. Para verificação, o endereço completo do correio
-e chame a página como membro do grupo-alvo. 
+Resposta: O widget não consegue aceder à publicação. Causas habituais: o ID
+está incorreto, a publicação foi eliminada ou retirada, ou a pessoa que está a ler
+não tem permissão para a ver. Para verificar, introduza novamente o endereço completo da publicação
+e aceda à página como membro do grupo-alvo.
 
-**Pergunta:** Diz "A postagem não contém nenhum conteúdo visível." 
+**Pergunta:** Aparece a mensagem «A publicação não contém conteúdos exibíveis.»
 
-Resposta: O artigo foi encontrado, mas no idioma exibido não foi encontrado
-nem título, nem teaser, nem texto — geralmente um rascunho em branco ou um
-Criada, mas não preenchida versão em idioma. 
+Resposta: A publicação foi encontrada, mas, no idioma exibido, não tem
+nem título, nem teaser, nem texto — na maioria das vezes, trata-se de um rascunho vazio ou de uma
+versão linguística criada, mas não preenchida.
 
-**Pergunta:** Por que comentários, curtidas, autor e data estão faltando? 
+**Pergunta:** Por que é que faltam comentários, «gostos», autor e data?
 
-Resposta: O widget mostra deliberadamente apenas o título, teaser e texto. Para o texto completo
-Não há como contornar o post original — é melhor chegar lá
-Além disso. 
+Resposta: O widget mostra deliberadamente apenas o título, o teaser e o texto. Para a visualização completa
+da publicação, não há como contornar a publicação original — o melhor é
+incluir também um link para lá.
 
-**Pergunta:** Por que alguém vê uma versão diferente da minha? 
+**Pergunta:** Por que razão alguém vê uma versão linguística diferente da minha?
 
-Resposta: O idioma que pertence à página ou navegador do
-pessoa lendo, não o idioma original do post. O
-versão adequada, uma versão existente é mostrada. 
+Resposta: É apresentado o idioma que corresponde à página ou ao navegador da
+pessoa que está a ler, e não o idioma original da publicação. Se a
+versão correspondente não existir, é apresentada uma versão disponível.
 
-**Pergunta:** Posso mostrar um post que alguém realmente não tem
-? 
+**Pergunta:** Posso usar isto para mostrar uma publicação que, na verdade, alguém não
+deveria ver?
 
-Resposta: Não. A postagem está carregada com o registro da pessoa que está lendo; 
-sem autorização, ele permanece invisível. 
+Resposta: Não. A publicação é carregada quando a pessoa que está a ler inicia sessão;
+sem autorização, permanece invisível.
 
-**Pergunta:** Posso exibir múltiplas postagens em um único widget? 
+**Pergunta:** Posso apresentar várias publicações num widget?
 
-Resposta: Não, um widget mostra exatamente uma postagem. Para múltiplas postagens
-Coloque vários widgets. 
+Resposta: Não, um widget apresenta exatamente uma publicação. Para várias publicações,
+coloque vários widgets.
 
-**Pergunta:** Parece que "A lista de postagens não pôde ser carregada. 
-Por favor, insira o ID do posto." 
+**Pergunta:** Aparece a mensagem «Não foi possível carregar a lista de publicações.
+Por favor, introduza o ID ou o endereço da publicação.»
 
-Resposta: A lista de contribuições não pôde ser recuperada no momento. A
-copie o endereço completo da postagem no campo **Post** e
-— o widget funciona da mesma forma.
+Resposta: Não foi possível aceder à lista de publicações neste momento. Copie o
+endereço completo da publicação para o campo **ID ou endereço** e
+clique em **Aplicar** — o widget funciona da mesma forma.

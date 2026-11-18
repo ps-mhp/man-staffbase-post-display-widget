@@ -1,8 +1,12 @@
-# Décors
+# Paramètres
 
-| Cadre | Description |
+| Paramètre | Description |
 | --- | --- |
-| Post | Le post à afficher. Champ requis. Sélectionnez **Sélectionner post ...** dans la liste (les 100 posts les plus récents, avec le canal et la date). S’il manque, sélectionnez **Entrer l’autre identifiant de post ...** et insérez l’adresse complète du post ou la chaîne de 24 chiffres à la fin de cette adresse. |
+| Publication | La publication à afficher. Champ obligatoire. Sélectionnez-la dans la liste **Publications** (les 100 dernières publications, avec la chaîne et la date ; la recherche filtre par titre et par chaîne). S'il n'y figure pas, sélectionnez **Saisir l'ID ou l'adresse** et saisissez l'adresse complète de l'article ou la chaîne de 24 caractères figurant à la fin de cette adresse. Une saisie ne permettant pas d'identifier un ID ne sera pas prise en compte. |
 
-Il n’y a plus rien à configurer. Affichage, ordre des éléments et
-Le langage surgit automatiquement.
+Les paramètres s'ouvrent dans une fenêtre en plein écran. Les onglets **Ordinateur**,
+**Tablette** et **Mobile** en haut de la fenêtre affichent la publication telle que les lectrices et
+lecteurs la voient.
+
+Il n’y a rien d’autre à configurer. L’affichage, l’ordre des éléments et
+la langue sont déterminés automatiquement.

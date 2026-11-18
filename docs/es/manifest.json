@@ -1,6 +1,6 @@
 {
-  "title": "Exhibición posterior",
-  "summary": "Muestra una publicación publicada de Staffbase directamente en otra página.",
+  "title": "Anuncio de la cuota",
+  "summary": "Muestra una publicación de Staffbase directamente en otra página.",
   "pages": [
     {
       "id": "overview",
@@ -14,7 +14,7 @@
     },
     {
       "id": "settings",
-      "title": "Escenarios",
+      "title": "Configuración",
       "file": "settings.md"
     },
     {
@@ -25,7 +25,7 @@
   ],
   "examples": [
     {
-      "title": "Contribución",
+      "title": "Artículo",
       "attributes": {},
       "resolve": [
         "post-id"

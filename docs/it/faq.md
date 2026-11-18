@@ -1,51 +1,51 @@
-# FAQ
+# Domande frequenti
 
-**Domanda:** Appare "Nessun ID post configurato. Si prega di inserire l'ID del
-pubblica nelle impostazioni del widget." 
+**Domanda:** Viene visualizzato il messaggio “Nessun ID post configurato. Inserire l’ID del
+post nelle impostazioni del widget.”
 
-Risposta: Nulla viene selezionato sotto **Contributo**. Il post dalla lista
-— o inserire l'indirizzo completo della posta — e
-Negozio. 
+Risposta: Nella finestra **Seleziona post** non è selezionato nulla. Selezionare il post dall’
+elenco **Post** — oppure inserire sotto **ID o indirizzo** l’indirizzo completo
+del post — e cliccare su **Applica**.
 
-**Domanda:** "Il post non poteva essere caricato" appare. 
+**Domanda:** Viene visualizzato il messaggio «Impossibile caricare il post».
 
-Risposta: Il widget non arriva al post. Cause comuni: l'ID
-non è vero, il post è stato cancellato o ritirato, o la lettura
-La persona non può vederla. Per controllo, l'intero indirizzo postale
-e richiamare la pagina come membro del gruppo target. 
+Risposta: Il widget non riesce a raggiungere il post. Cause più comuni: l’ID
+non è corretto, il post è stato cancellato o ritirato, oppure l’utente
+non è autorizzato a visualizzarlo. Per verificare, inserire nuovamente l’indirizzo completo del post
+e accedere alla pagina come membro del gruppo target.
 
-**Domanda:** Dice "Il post non contiene alcun contenuto visibile." 
+**Domanda:** Viene visualizzato il messaggio «Il post non contiene contenuti visualizzabili».
 
-Risposta: L'articolo è stato trovato, ma nella lingua mostrata non è stato trovato
-né titolo, né teaser, né testo — di solito una bozza bianca o un
-Versione linguistica creata ma non completata. 
+Risposta: Il post è stato trovato, ma nella lingua visualizzata non presenta
+né titolo, né anteprima, né testo — solitamente si tratta di una bozza vuota o di una
+versione linguistica creata ma non compilata.
 
-**Domanda:** Perché mancano commenti, like, autore e data? 
+**Domanda:** Perché mancano commenti, “Mi piace”, autore e data?
 
-Risposta: Il widget mostra deliberatamente solo il titolo, il teaser e il testo. Per l'intero dettaglio
-Non c'è modo di aggirare il post originale — è meglio arrivarci
-Inoltre. 
+Risposta: Il widget mostra volutamente solo titolo, anteprima e testo. Per la visualizzazione completa
+del post non c’è alternativa al post originale — è consigliabile
+aggiungere un link aggiuntivo che rimandi ad esso.
 
-**Domanda:** Perché qualcuno vede una versione linguistica diversa dalla mia? 
+**Domanda:** Perché qualcuno vede una versione linguistica diversa dalla mia?
 
-Risposta: La lingua che appartiene alla pagina o al browser del
-persona che legge, non la lingua originale del post. Fa il
-versione adatta, viene mostrata una versione esistente. 
+Risposta: Viene visualizzata la lingua corrispondente alla pagina o al browser della
+persona che sta leggendo, non la lingua originale del post. Se la
+versione corrispondente non esiste, ne viene mostrata una disponibile.
 
-**Domanda:** Posso mostrare un post che in realtà qualcuno non ha
-? 
+**Domanda:** Posso mostrare un post che in realtà qualcuno non
+dovrebbe vedere?
 
-Risposta: No. Il post è carico con la registrazione della persona che legge; 
-Senza autorizzazione, rimane invisibile. 
+Risposta: No. Il post viene caricato al momento dell’accesso della persona che lo legge;
+senza autorizzazione rimane invisibile.
 
-**Domanda:** Posso visualizzare più post in un unico widget? 
+**Domanda:** Posso visualizzare più contributi in un unico widget?
 
-Risposta: No, un widget mostra esattamente un post. Per più post
-Metti più widget. 
+Risposta: No, un widget mostra esattamente un solo contributo. Per più contributi,
+inserire più widget.
 
-**Domanda:** Sembra "L'elenco dei post non è stato caricato. 
-Si prega di inserire l'ID del postale." 
+**Domanda:** Viene visualizzato il messaggio «Impossibile caricare l’elenco dei contributi.
+Inserire l’ID o l’indirizzo del post.”
 
-Risposta: L'elenco dei contributi non è stato recuperato al momento. Il
-copia l'indirizzo completo del post nel campo **Post** e
-— il widget funziona allo stesso modo.
+Risposta: Al momento non è stato possibile recuperare l’elenco dei post. Copiare l’
+indirizzo completo del post nel campo **ID o indirizzo** e
+cliccare su **Applica**: il widget funzionerà allo stesso modo.
