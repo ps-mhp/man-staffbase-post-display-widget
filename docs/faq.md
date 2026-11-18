@@ -3,9 +3,9 @@
 **Frage:** Es erscheint „Keine Beitrags-ID konfiguriert. Bitte die ID des
 Beitrags in den Widget-Einstellungen eintragen.“
 
-Antwort: Unter **Beitrag** ist nichts gewählt. Den Beitrag aus der Liste
-wählen — oder die vollständige Adresse des Beitrags eintragen — und
-speichern.
+Antwort: Im Fenster **Beitrag wählen** ist nichts gewählt. Den Beitrag in der
+Liste **Beiträge** wählen — oder unter **ID oder Adresse** die vollständige
+Adresse des Beitrags eintragen — und **Übernehmen**.
 
 **Frage:** Es erscheint „Beitrag konnte nicht geladen werden“.
 
@@ -44,8 +44,8 @@ Antwort: Nein, ein Widget zeigt genau einen Beitrag. Für mehrere Beiträge
 mehrere Widgets platzieren.
 
 **Frage:** Es erscheint „Die Liste der Beiträge konnte nicht geladen werden.
-Bitte die Beitrags-ID eintragen.“
+Bitte die Beitrags-ID oder -Adresse eintragen.“
 
 Antwort: Die Liste der Beiträge liess sich gerade nicht abrufen. Die
-vollständige Adresse des Beitrags in das Feld **Beitrag** kopieren und
-speichern — das Widget funktioniert damit genauso.
+vollständige Adresse des Beitrags in das Feld **ID oder Adresse** kopieren und
+**Übernehmen** — das Widget funktioniert damit genauso.
