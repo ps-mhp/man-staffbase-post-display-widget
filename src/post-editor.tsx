@@ -13,7 +13,6 @@
 
 import * as React from "react";
 import { ReactElement, useEffect, useMemo, useRef, useState } from "react";
-import { Search } from "lucide-react";
 
 import { Field } from "@man/config-ui/form/field";
 import { FormSection } from "@man/config-ui/form/form-section";
@@ -22,6 +21,7 @@ import { Button } from "@man/config-ui/primitives/button";
 import { Input } from "@man/config-ui/primitives/input";
 import { useConfigShell } from "@man/config-ui/shell/shell-context";
 import { SidebarPanel } from "@man/config-ui/sidebar/sidebar-panel";
+import { SidebarSearch } from "@man/config-ui/sidebar/sidebar-search";
 import { ItemList, type ListItem } from "@man/config-ui/sidebar/item-list";
 import { StatusBar } from "@man/config-ui/toolbar/status-bar";
 import { readPostId } from "@shared/staffbase/posts";
@@ -117,20 +117,12 @@ export function PostEditor({ value, onChange, loadPosts = fetchPostOptions }: Po
             </Button>
           }
         >
-          <div className="relative px-2 pb-2">
-            <Search
-              className="pointer-events-none absolute left-5 top-1/2 size-4 -translate-y-[calc(50%+4px)] text-muted-foreground"
-              aria-hidden
-            />
-            <Input
-              type="search"
-              className="pl-9"
-              aria-label="Beitrag suchen"
-              placeholder="Titel oder Kanal suchen"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-            />
-          </div>
+          <SidebarSearch
+            aria-label="Beitrag suchen"
+            placeholder="Titel oder Kanal suchen"
+            value={query}
+            onValueChange={setQuery}
+          />
           <ItemList
             aria-label="Beiträge"
             items={items}
