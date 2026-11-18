@@ -11,7 +11,6 @@
  * limitations under the License.
  */
 
-import { EntityCatalogSource, EntityOption } from "@shared/entity-picker/entity-catalog";
 import { pickLocalizedTitle } from "@shared/entity-picker/localized-title";
 
 /**
@@ -34,7 +33,7 @@ const CATALOG_LIMIT = 100;
 
 type Localization = Record<string, { title?: unknown }>;
 
-interface RawPost {
+export interface RawPost {
   id?: unknown;
   published?: unknown;
   contents?: Localization;
@@ -53,33 +52,62 @@ const formatDate = (raw: unknown): string | null => {
   return date.toLocaleDateString(language);
 };
 
+/** Ein Beitrag, wie die Liste im Editor ihn zeigt. */
+export interface PostOption {
+  id: string;
+  /** Titel in der Sprache der Lesenden; ohne Titel die Kennung. */
+  title: string;
+  /** Kanal und Datum, damit gleichlautende Titel unterscheidbar bleiben. */
+  meta: string;
+}
+
 /**
- * How the picker gets its post list.
+ * Wie die Liste ihre Beiträge bekommt.
  *
- * Titles alone repeat — the same announcement goes out in several channels,
- * numbered or not — so channel and date are part of the label.
+ * Titel allein wiederholen sich – dieselbe Meldung geht in mehreren Kanälen
+ * hinaus –, deshalb gehören Kanal und Datum als Unterzeile dazu.
  */
-export const postCatalogSource: EntityCatalogSource<RawPost> = {
-  async fetchList(): Promise<RawPost[]> {
-    const query = new URLSearchParams({ limit: String(CATALOG_LIMIT), sort: "published_DESC" });
-    const response = await fetch(`${CATALOG_ENDPOINT}?${query}`, {
-      credentials: "same-origin",
-      headers: { Accept: "application/json" },
-    });
-    if (!response.ok) return [];
+export async function fetchPostList(): Promise<RawPost[]> {
+  const query = new URLSearchParams({ limit: String(CATALOG_LIMIT), sort: "published_DESC" });
+  const response = await fetch(`${CATALOG_ENDPOINT}?${query}`, {
+    credentials: "same-origin",
+    headers: { Accept: "application/json" },
+  });
+  if (!response.ok) return [];
 
-    const body = (await response.json()) as CatalogResponse;
-    return body.data ?? [];
-  },
+  const body = (await response.json()) as CatalogResponse;
+  return body.data ?? [];
+}
 
-  toOption(entry: RawPost): EntityOption | null {
-    const id = entry?.id;
-    if (typeof id !== "string" || id === "") return null;
+/** Macht aus einem Eintrag der API eine Zeile der Liste; ohne Kennung `null`. */
+export function toPostOption(entry: RawPost): PostOption | null {
+  const id = entry?.id;
+  if (typeof id !== "string" || id === "") return null;
 
-    const title = pickLocalizedTitle(entry.contents);
-    if (title === null) return { id, title: id };
+  const title = pickLocalizedTitle(entry.contents);
+  if (title === null) return { id, title: id, meta: "" };
 
-    const parts = [title.trim(), pickLocalizedTitle(entry.channel?.config?.localization), formatDate(entry.published)];
-    return { id, title: parts.filter((part): part is string => part !== null && part !== "").join(" · ") };
-  },
-};
+  const meta = [pickLocalizedTitle(entry.channel?.config?.localization), formatDate(entry.published)];
+  return {
+    id,
+    title: title.trim(),
+    meta: meta.filter((part): part is string => part !== null && part !== "").join(" · "),
+  };
+}
+
+/**
+ * Die Beiträge, die diese Person einbetten darf.
+ *
+ * Wirft nie: scheitert die Anfrage, bleibt die Liste leer, und der Editor
+ * fällt auf die Eingabe der ID zurück. Eine Ausnahme risse sonst den ganzen
+ * Dialog mit.
+ */
+export async function fetchPostOptions(): Promise<PostOption[]> {
+  let entries: RawPost[];
+  try {
+    entries = await fetchPostList();
+  } catch {
+    return [];
+  }
+  return entries.map(toPostOption).filter((option): option is PostOption => option !== null);
+}

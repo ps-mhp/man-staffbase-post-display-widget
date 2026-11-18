@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-import { CATALOG_ENDPOINT, postCatalogSource } from "./post-catalog";
+import { CATALOG_ENDPOINT, fetchPostList, fetchPostOptions, toPostOption } from "./post-catalog";
 
 const ID = "6aa109586a1d0e1cfb6de5d3";
 
@@ -26,13 +26,13 @@ const post = (overrides: Record<string, unknown> = {}): Record<string, unknown> 
 const respondWith = (body: unknown): jest.SpyInstance =>
   jest.spyOn(globalThis, "fetch").mockResolvedValue(new Response(JSON.stringify(body), { status: 200 }));
 
-describe("postCatalogSource.fetchList", () => {
+describe("fetchPostList", () => {
   afterEach(() => jest.restoreAllMocks());
 
   it("asks for the newest posts the author can read", async () => {
     const fetchMock = respondWith({ total: 0, data: [] });
 
-    await postCatalogSource.fetchList();
+    await fetchPostList();
 
     const [url, init] = fetchMock.mock.calls[0] as [string, RequestInit];
     expect(url.startsWith(CATALOG_ENDPOINT)).toBe(true);
@@ -41,35 +41,56 @@ describe("postCatalogSource.fetchList", () => {
     expect(init.credentials).toBe("same-origin");
   });
 
-  it("returns the raw posts for toOption to map", async () => {
+  it("returns the raw posts for toPostOption to map", async () => {
     respondWith({ total: 1, data: [post()] });
-    await expect(postCatalogSource.fetchList()).resolves.toEqual([post()]);
+    await expect(fetchPostList()).resolves.toEqual([post()]);
   });
 
   it("answers with an empty list when the request is refused", async () => {
     jest.spyOn(globalThis, "fetch").mockResolvedValue(new Response("", { status: 403 }));
-    await expect(postCatalogSource.fetchList()).resolves.toEqual([]);
+    await expect(fetchPostList()).resolves.toEqual([]);
   });
 });
 
-describe("postCatalogSource.toOption", () => {
+describe("toPostOption", () => {
   beforeEach(() => document.documentElement.setAttribute("lang", "de-DE"));
   afterEach(() => document.documentElement.removeAttribute("lang"));
 
   it("labels a post with its title, channel and date in the reader's language", () => {
-    expect(postCatalogSource.toOption(post() as never)).toEqual({
+    expect(toPostOption(post() as never)).toEqual({
       id: ID,
-      title: "Neuer TGX auf der IAA · Ignition Point · 9.9.2026",
+      title: "Neuer TGX auf der IAA",
+      meta: "Ignition Point · 9.9.2026",
     });
   });
 
   it("falls back to the id when a post has no title", () => {
-    const option = postCatalogSource.toOption(post({ contents: {}, channel: undefined, published: null }) as never);
-    expect(option).toEqual({ id: ID, title: ID });
+    const option = toPostOption(post({ contents: {}, channel: undefined, published: null }) as never);
+    expect(option).toEqual({ id: ID, title: ID, meta: "" });
   });
 
   it("skips an entry without a usable id", () => {
-    expect(postCatalogSource.toOption(post({ id: 42 }) as never)).toBeNull();
-    expect(postCatalogSource.toOption(null as never)).toBeNull();
+    expect(toPostOption(post({ id: 42 }) as never)).toBeNull();
+    expect(toPostOption(null as never)).toBeNull();
+  });
+});
+
+describe("fetchPostOptions", () => {
+  beforeEach(() => document.documentElement.setAttribute("lang", "de-DE"));
+  afterEach(() => {
+    document.documentElement.removeAttribute("lang");
+    jest.restoreAllMocks();
+  });
+
+  it("maps the posts and drops entries without an id", async () => {
+    respondWith({ total: 2, data: [post(), post({ id: null })] });
+    await expect(fetchPostOptions()).resolves.toEqual([
+      { id: ID, title: "Neuer TGX auf der IAA", meta: "Ignition Point · 9.9.2026" },
+    ]);
+  });
+
+  it("answers with an empty list instead of throwing when the request fails", async () => {
+    jest.spyOn(globalThis, "fetch").mockRejectedValue(new Error("offline"));
+    await expect(fetchPostOptions()).resolves.toEqual([]);
   });
 });

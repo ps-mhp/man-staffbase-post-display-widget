@@ -21,10 +21,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { BlockFactory, BlockDefinition, ExternalBlockDefinition, BaseBlock } from "widget-sdk";
-import { fetchEntityCatalog } from "@shared/entity-picker/entity-catalog";
-import { startEntityPickerInjector } from "@shared/entity-picker/entity-picker-injector";
 import { configurationSchema, uiSchema } from "./configuration-schema";
-import { postCatalogSource } from "./post-catalog";
+import { startPostEditorInjector } from "./post-editor-injector";
 import { readPostId } from "@shared/staffbase/posts";
 import { PostView } from "./post-view";
 import icon from "../resources/post-display-widget.svg";
@@ -44,24 +42,15 @@ export const POST_ID_ATTRIBUTE = "post-id";
 /** Attributes handled by the widget; mirrored in the configuration schema. */
 const widgetAttributes: string[] = [POST_ID_ATTRIBUTE];
 
-const POST_PICKER_LABELS = {
-  placeholder: "Beitrag auswählen …",
-  manualOption: "Andere Beitrags-ID eingeben …",
-  unavailableNotice: "Die Liste der Beiträge konnte nicht geladen werden. Bitte die Beitrags-ID eintragen.",
-};
-
 /**
- * Offers the posts as a list in front of the id field, in both editors.
+ * Legt den Beitrags-Editor über das Feld \`post-id\`, sobald das Studio den
+ * Dialog zeigt (Vollbild-Rahmen von \`@man/config-ui\`, nachgeladen).
  *
- * Runs at module scope for the same reason as the survey widget's
- * `stopSurveyPickerInjector`. Exported only so tests can dispose of the
- * observer on teardown; production code never calls this.
+ * Läuft auf Modulebene, wie bei den anderen Widgets. Nur exportiert, damit
+ * Tests den Beobachter beim Abbau beenden können; Produktionscode ruft das
+ * nie auf.
  */
-export const stopPostPickerInjector = startEntityPickerInjector({
-  fieldKey: POST_ID_ATTRIBUTE,
-  fetchOptions: () => fetchEntityCatalog(postCatalogSource),
-  labels: POST_PICKER_LABELS,
-});
+export const stopPostEditorInjector = startPostEditorInjector();
 
 const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
   return class PostDisplayWidgetBlock extends BaseBlockClass implements BaseBlock {
